@@ -4,6 +4,6 @@ WORKDIR /mlflow-data
 
 COPY requirements.txt .
 
-RUN pip install psycopg2-binary boto3 mlflow
+RUN pip install -r requirements.txt
 
 CMD mlflow server --port $PORT --host 0.0.0.0
