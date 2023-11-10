@@ -10,7 +10,7 @@
 
 ### Lancer le serveur MLFlow dans un conteneur Docker 
 
-`docker run -d --name mlflow-local-server -v $(pwd)/mlflow-data:/mlflow-data -p 5001:5001 -e PORT=5001 davidscanu/mlflow-server:v1.0`
+`docker run -d --name mlflow-local-server -v $(pwd)/mlflow-data:/mlflow-data -p 5001:5001 -e PORT=5001 davidscanu/mlflow-server:v1.1`
 
 ### Se connecter au serveur à l'adresse suivante :
 `http://localhost:5001`.
