@@ -22,7 +22,7 @@
 - `--name mlflow-local-server` : changer le nom du container.
 - `-v $(pwd)/mlflow-data:/mlflow-data` : les données des logs de MLFlow sont stockées dans un dossier `mlflow-data`. Ce flag permet de synchroniser ce dossier avec votre dossier local. 
 
-## Docker Hub 
+## Docker Hub
 
 - <a href="https://hub.docker.com/r/davidscanu/mlflow-server" target="_BLANK">https://hub.docker.com/r/davidscanu/mlflow-server</a>
 
