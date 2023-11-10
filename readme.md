@@ -6,7 +6,7 @@
 
 ### Télécharger l'image du serveur MLFlow 
 
-`docker pull davidscanu/mlflow-server`
+`docker pull davidscanu/mlflow-server:v1.1`
 
 ### Lancer le serveur MLFlow dans un conteneur Docker 
 
