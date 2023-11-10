@@ -1,0 +1,17 @@
+# Dockerignore : ignore this files in the docker image. 
+Dockerfile
+
+.env/
+.venv/
+**/.env/
+**/.venv/
+
+.git
+**/.git
+
+playground.ipynb
+docker-run.sh
+
+__pycache__/
+
+ngrock.sh

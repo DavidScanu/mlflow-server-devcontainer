@@ -1,0 +1,10 @@
+mlflow-data/
+**/.env
+**/.venv
+.DS_Store
+Thumbs.db
+
+test-local-server.ipynb
+test-ngrock.ipynb
+
+docker-run.sh
