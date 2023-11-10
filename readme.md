@@ -1,6 +1,6 @@
 <img src="https://uploads-ssl.webflow.com/6108e07db6795265f203a636/61f90cbb8c06383f8944720e_ML%20Flow.png" >
 
-# Serveur local MLFlow pour Machine Learning et Deep Learning.
+# Serveur local MLFlow pour Machine Learning
 
 ## Docker Hub 
 
