@@ -2,10 +2,6 @@
 
 # Serveur local MLFlow pour Machine Learning
 
-## Docker Hub 
-
-- <a href="https://hub.docker.com/r/davidscanu/mlflow-server" target="_BLANK">https://hub.docker.com/r/davidscanu/mlflow-server</a>
-
 ## How-to use
 
 ### Télécharger l'image du serveur MLFlow 
@@ -25,6 +21,10 @@
 - `-e PORT=5001` : port utilsé par le serveur MLFLow à l'intérieur du container.
 - `--name mlflow-local-server` : changer le nom du container.
 - `-v $(pwd)/mlflow-data:/mlflow-data` : les données des logs de MLFlow sont stockées dans un dossier `mlflow-data`. Ce flag permet de synchroniser ce dossier avec votre dossier local. 
+
+## Docker Hub 
+
+- <a href="https://hub.docker.com/r/davidscanu/mlflow-server" target="_BLANK">https://hub.docker.com/r/davidscanu/mlflow-server</a>
 
 ## Créer une image Docker personnalisée
 
