@@ -1,6 +1,6 @@
 <img src="https://uploads-ssl.webflow.com/6108e07db6795265f203a636/61f90cbb8c06383f8944720e_ML%20Flow.png" width="600px" style="padding-bottom: 12px;">
 
-# Serveur local MLFlow pour Machine Learning
+# Lancer un serveur MLflow dans un codespace GitHub
 
 ## TODO
 
@@ -33,24 +33,21 @@ Remote Experiment Tracking with MLflow Tracking Server
 
 1. Cloner ce dépôt `git clone <URL>`
 2. Lancer le serveur MLFlow : `docker compose up -d`
-3. Accéder à l'interface utilisateur en accédant à `http://127.0.0.1:5001` dans votre navigateur
-4. Définir l'**URI de tracking MLflow** :  
-   - Option 1 : Dans le code python, `mlflow.set_tracking_uri("http://localhost:5001")` 
-   - Option2 : Variable d'environnement, `export MLFLOW_TRACKING_URI=http://127.0.0.1:5001`
+3. Accéder à l'interface utilisateur en accédant à `http://127.0.0.1:5001` dans votre navigateur.
 
 ### Comment utiliser ce dépôt dans Codespaces
 
-1. Créer un codespace à partir de ce dépôt (UI : Code / Codespaces / +)
+1. Créer un codespace à partir de ce dépôt (UI de GitHub: Code / Codespaces / +)
 2. Installer les bibliothèques python : `pip install mlflow psycopg2 boto3` (à enlever)
 3. Démarrer les conteneurs avec la commande : `docker compose up -d` (à enlever)
-4. Accéder à l'interface utilisateur en accédant à l'URL public exposée par codespace, en cliquant sur `http://127.0.0.1:5001` au lancement du serveur
+4. Accéder à l'interface utilisateur en accédant à l'URL public exposée par codespace, en cliquant sur `http://127.0.0.1:5001` au lancement du serveur. Dans le Temrinal, clicuqer sur "Ports", puis définir l'URL du port 5001 comme public. 
 
 
 ## Utiliser le serveur 
 
 Pour utiliser le serveur MLflow, il faut définir l'**URI de tracking MLflow**, en fonction de votre environnement de développement. 
 
-Dans le même environnement que le serveur MLflow, utiliser l'une de ces deux méthodes :
+Dans un environnement local, utiliser l'une de ces deux méthodes :
 - Python : `mlflow.set_tracking_uri("http://127.0.0.1:5001")`
 - Variable d'environnement : `export MLFLOW_TRACKING_URI=http://127.0.0.1:5001`
 
