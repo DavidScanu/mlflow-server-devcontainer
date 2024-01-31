@@ -33,26 +33,31 @@ Remote Experiment Tracking with MLflow Tracking Server
 
 1. Cloner ce dépôt `git clone <URL>`
 2. Lancer le serveur MLFlow : `docker compose up -d`
-3. Accéder à l'interface utilisateur en accédant à `http://127.0.0.1:5000` dans votre navigateur
+3. Accéder à l'interface utilisateur en accédant à `http://127.0.0.1:5001` dans votre navigateur
 4. Définir l'**URI de tracking MLflow** :  
    - Option 1 : Dans le code python, `mlflow.set_tracking_uri("http://localhost:5001")` 
-   - Option2 : Variable d'environnement, `export MLFLOW_TRACKING_URI=http://127.0.0.1:5000`
+   - Option2 : Variable d'environnement, `export MLFLOW_TRACKING_URI=http://127.0.0.1:5001`
 
 ### Comment utiliser ce dépôt dans Codespaces
 
 1. Créer un codespace à partir de ce dépôt (UI : Code / Codespaces / +)
 2. Installer les bibliothèques python : `pip install mlflow psycopg2 boto3` (à enlever)
 3. Démarrer les conteneurs avec la commande : `docker compose up -d` (à enlever)
-4. Accéder à l'interface utilisateur en accédant à l'URL public exposée par codespace, en cliquant sur `http://127.0.0.1:5000` au lancement du serveur
-5. Définir l'**URI de tracking MLflow**, en fonction de votre environnement de développement. Suivre le tableau suivant :  
+4. Accéder à l'interface utilisateur en accédant à l'URL public exposée par codespace, en cliquant sur `http://127.0.0.1:5001` au lancement du serveur
 
-| Environnement                      | Dans le code Python                                                                                                 | Configuration variable d'environnement                                                                                                         |
-|-----------------------------------|----------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| Le même codespace que le serveur | `mlflow.set_tracking_uri("http://localhost:5001")`        | `export MLFLOW_TRACKING_URI=http://127.0.0.1:5000`                                                                                           |
-| Un notebook Colab            | `mlflow.set_tracking_uri("http://url-public-exposee-par-codespace-github")` |     "Secrets" (menu de gauche)<br>Nom : `MLFLOW_TRACKING_URI` </br>Valeur : `http://url-public-exposee-par-codespace-github`                                                                                                                                          |
-| - En local <br>- Un autre codespace </br>- Une VM | `mlflow.set_tracking_uri("http://url-public-exposee-par-codespace-github")`                                   | `export MLFLOW_TRACKING_URI=http://url-public-exposee-par-codespace-github`                                                             |
 
-## Tester le serveur 
+## Utiliser le serveur 
+
+Pour utiliser le serveur MLflow, il faut définir l'**URI de tracking MLflow**, en fonction de votre environnement de développement. 
+
+Dans le même environnement que le serveur MLflow, utiliser l'une de ces deux méthodes :
+- Python : `mlflow.set_tracking_uri("http://127.0.0.1:5001")`
+- Variable d'environnement : `export MLFLOW_TRACKING_URI=http://127.0.0.1:5001`
+
+Alternativement, pour utiliser le serveur depuis un environnement distant (ex: Colab), utiliser l'une de ces deux méthodes :
+
+- Python : `mlflow.set_tracking_uri("http://url-public-exposee-par-codespace-github")`
+- Variable d'environnement : `export MLFLOW_TRACKING_URI=http://url-public-exposee-par-codespace-github`
 
 ### Entraîner et tracker un modèle
 
