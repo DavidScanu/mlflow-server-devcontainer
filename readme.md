@@ -40,7 +40,7 @@ Remote Experiment Tracking with MLflow Tracking Server
 1. Créer un codespace à partir de ce dépôt (UI de GitHub: Code / Codespaces / +)
 2. Installer les bibliothèques python : `pip install mlflow psycopg2 boto3` (à enlever)
 3. Démarrer les conteneurs avec la commande : `docker compose up -d` (à enlever)
-4. Accéder à l'interface utilisateur en accédant à l'URL public exposée par codespace, en cliquant sur `http://127.0.0.1:5001` au lancement du serveur. Dans le Temrinal, clicuqer sur "Ports", puis définir l'URL du port 5001 comme public. 
+4. Accéder à l'interface utilisateur en accédant à l'URL public exposée par codespace. Dans le Temrinal, cliquer sur "Ports", puis définir l'URL du port 5001 comme public.
 
 
 ## Utiliser le serveur 
