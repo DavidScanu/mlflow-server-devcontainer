@@ -2,6 +2,8 @@
 
 # Lancer un serveur MLflow dans un codespace GitHub
 
+Vosu trouverez ici, tout ce qu'il faut pour lancer un serveur MLflow dans un codespace GitHub (serveur distant, accessible depuis un notebook Google Colab). Alternativement, vous pouvz utiliser ce dépôt pour lancer un serveur MLflow local. 
+
 ## TODO
 
 - Create `devcontainer.json`
