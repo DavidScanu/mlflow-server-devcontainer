@@ -15,10 +15,8 @@ https://docs.github.com/fr/codespaces/setting-up-your-project-for-codespaces/add
 3. Automatically forwarding a port (https://docs.github.com/en/codespaces/developing-in-a-codespace/forwarding-ports-in-your-codespace#automatically-forwarding-a-port)
 4. Lancer `docker compose up -d`
 
+- Merger tutorial.ipynb, train.py et try-model.py dans un Colab (https://drive.google.com/file/d/1kfeJkVBVEAmaY1-84BOylGPZnDAV6C-v/)
 
-- Vérifier train.py
-- Vérifier tutorial.ipynb
-- Tester avec Colab (https://drive.google.com/file/d/1kfeJkVBVEAmaY1-84BOylGPZnDAV6C-v/)
 - Add Postegresql database
 - Add artefact store
 - Ou stocker les variables d'environnement pour Artefact store et Database ?
