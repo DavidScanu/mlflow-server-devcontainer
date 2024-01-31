@@ -4,7 +4,7 @@
 
 ## TODO
 
-- Codespace configure devcontainer
+- Codespace configure devcontainer (https://docs.github.com/fr/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/introduction-to-dev-containers)
 - train.py
 - tutorial.ipynb
 - Notebook : récupération d'un modèle, tester inférence
