@@ -28,8 +28,6 @@ https://docs.github.com/fr/codespaces/setting-up-your-project-for-codespaces/add
 Remote Experiment Tracking with MLflow Tracking Server
 - https://mlflow.org/docs/latest/tracking/tutorials/remote-server.html
 
-Compose Build Specification
-- https://docs.docker.com/compose/compose-file/build/
 
 ## Guide d'utilisation
 
