@@ -4,7 +4,7 @@
 
 ## TODO
 
-- Image/build in compose.yaml
+- Codespace configure devcontainer
 - train.py
 - Notebook : récupération d'un modèle, tester inférence
 - Add Postegresql database
