@@ -6,18 +6,15 @@
 
 - Create `devcontainer.json`
 
-Présentation des conteneurs de développement
-https://docs.github.com/fr/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/introduction-to-dev-containers
-
-1. Installer environnement ubuntu et python
+1. Installer environnement ubuntu et python (https://docs.github.com/fr/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/introduction-to-dev-containers)
 2. Installer les bibiolthèques `pip install mlflow psycopg2 boto3`
 3. Installer extensions : python, docker,
 4. 4. Lancer `docker compose up -d`
 5. Automatically forwarding a port (https://docs.github.com/en/codespaces/developing-in-a-codespace/forwarding-ports-in-your-codespace#automatically-forwarding-a-port)
 6. Lancer le automatiquement navigateur sur l'URL fowardée (pour afficher l'UI Mlflow)
 
-- Merger tutorial.ipynb, train.py et try-model.py dans un Colab (https://drive.google.com/file/d/1kfeJkVBVEAmaY1-84BOylGPZnDAV6C-v/)
 
+- Merger tutorial.ipynb, train.py et try-model.py dans un Colab (https://drive.google.com/file/d/1kfeJkVBVEAmaY1-84BOylGPZnDAV6C-v/)
 - Add Postegresql database
 - Add artefact store
 - Ou stocker les variables d'environnement pour Artefact store et Database ?
