@@ -9,8 +9,12 @@
 Présentation des conteneurs de développement
 https://docs.github.com/fr/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/introduction-to-dev-containers
 
-Automatically forwarding a port
-- https://docs.github.com/en/codespaces/developing-in-a-codespace/forwarding-ports-in-your-codespace#automatically-forwarding-a-port
+1. Installer environnement ubuntu et python
+2. Installer les bibiolthèques `pip install mlflow psycopg2 boto3`
+3. Installer extensions : python, docker, 
+3. Automatically forwarding a port (https://docs.github.com/en/codespaces/developing-in-a-codespace/forwarding-ports-in-your-codespace#automatically-forwarding-a-port)
+4. Lancer `docker compose up -d`
+
 
 - Vérifier train.py
 - Vérifier tutorial.ipynb
