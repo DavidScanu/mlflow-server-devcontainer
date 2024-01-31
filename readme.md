@@ -52,8 +52,65 @@ Remote Experiment Tracking with MLflow Tracking Server
 | Un notebook Colab            | `mlflow.set_tracking_uri("http://url-public-exposee-par-codespace-github")` |     "Secrets" (menu de gauche)<br>Nom : `MLFLOW_TRACKING_URI` </br>Valeur : `http://url-public-exposee-par-codespace-github`                                                                                                                                          |
 | - En local <br>- Un autre codespace </br>- Une VM | `mlflow.set_tracking_uri("http://url-public-exposee-par-codespace-github")`                                   | `export MLFLOW_TRACKING_URI=http://url-public-exposee-par-codespace-github`                                                             |
 
+## Tester le serveur 
 
+### Entraîner et tracker un modèle
 
+Executer ce code dans un notebook local ou notebook Colab, en remplaçant `mlflow_tracking_uri` par l'URI de Tracking MLflow qui convient.
+
+```
+# Check MLflow Tracking with simple training example
+import mlflow
+
+from sklearn.model_selection import train_test_split
+from sklearn.datasets import load_diabetes
+from sklearn.ensemble import RandomForestRegressor
+
+# Set local server URIs (Both URI seems to work)
+mlflow_tracking_uri = "http://127.0.0.1:5001"
+# mlflow_tracking_uri = "http://0.0.0.0:5001"
+
+# Set MLflow Tracking URI
+mlflow.set_tracking_uri(mlflow_tracking_uri)
+
+mlflow.autolog()
+
+db = load_diabetes()
+X_train, X_test, y_train, y_test = train_test_split(db.data, db.target)
+
+# Create and train models.
+rf = RandomForestRegressor(n_estimators=100, max_depth=6, max_features=3)
+rf.fit(X_train, y_train)
+
+# Use the model to make predictions on the test dataset.
+predictions = rf.predict(X_test)
+```
+
+### Utiliser un modèle
+
+```
+import mlflow
+
+# Set local server URIs (Both URI seems to work)
+mlflow_tracking_uri = "http://127.0.0.1:5001"
+# mlflow_tracking_uri = "http://0.0.0.0:5001"
+
+# Set MLflow Tracking URI
+mlflow.set_tracking_uri(mlflow_tracking_uri)
+
+run_id = "YOUR_RUN_ID"  # You can find run ID in the Tracking UI
+artifact_path = "model"
+
+# Download artifact via the tracking server
+mlflow_artifact_uri = f"runs:/{run_id}/{artifact_path}"
+local_path = mlflow.artifacts.download_artifacts(mlflow_artifact_uri)
+
+# Load the model
+model = mlflow.sklearn.load_model(local_path)
+
+# If the model prints, everything works!
+print(model)
+```
 
 ## Docker Hub
 
