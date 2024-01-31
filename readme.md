@@ -24,9 +24,10 @@ Compose Build Specification
 
 ### Utiliser ce dépôt pour créer un serveur local
 
-1. Lancer le serveur MLFlow : `docker compose up -d`
-2. Accéder à l'interface utilisateur en accédant à `http://127.0.0.1:5000` dans votre navigateur
-3. Définir l'**URI de tracking MLflow** :  
+1. Cloner ce dépôt `git clone <URL>`
+2. Lancer le serveur MLFlow : `docker compose up -d`
+3. Accéder à l'interface utilisateur en accédant à `http://127.0.0.1:5000` dans votre navigateur
+4. Définir l'**URI de tracking MLflow** :  
    - Option 1 : Dans le code python, `mlflow.set_tracking_uri("http://localhost:5001")` 
    - Option2 : Variable d'environnement, `export MLFLOW_TRACKING_URI=http://127.0.0.1:5000`
 
@@ -36,7 +37,7 @@ Compose Build Specification
 
 ### Comment utiliser ce dépôt dans Codespaces
 
-1. Créer un codespace à partir de ce dépôt
+1. Créer un codespace à partir de ce dépôt (UI : Code / Codespaces / +)
 2. Installer les bibliothèques python : `pip install mlflow psycopg2 boto3` (à enlever)
 3. Démarrer les conteneurs avec la commande : `docker compose up -d` (à enlever)
 4. Accéder à l'interface utilisateur en accédant à l'URL public exposée par codespace, en cliquant sur `http://127.0.0.1:5000` au lancement du serveur
