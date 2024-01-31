@@ -34,7 +34,7 @@ Remote Experiment Tracking with MLflow Tracking Server
 3. Démarrer les conteneurs avec la commande : `docker compose up -d` (à enlever)
 4. Accéder à l'interface utilisateur en accédant à l'URL public exposée par codespace. Dans le Temrinal, cliquer sur "Ports", puis définir l'URL du port 5001 comme public.
 
-### Créer un serveur local
+### Créer un serveur local (alternative)
 
 1. Cloner ce dépôt `git clone <URL>`
 2. Lancer le serveur MLFlow : `docker compose up -d`
