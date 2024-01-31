@@ -27,19 +27,18 @@ Remote Experiment Tracking with MLflow Tracking Server
 
 ## Guide d'utilisation
 
-### Utiliser ce dépôt pour créer un serveur local
-
-1. Cloner ce dépôt `git clone <URL>`
-2. Lancer le serveur MLFlow : `docker compose up -d`
-3. Accéder à l'interface utilisateur en accédant à `http://127.0.0.1:5001` dans votre navigateur.
-
-### Comment utiliser ce dépôt dans Codespaces
+### Créer un serveur MLflow dans codespace (remote server) 
 
 1. Créer un codespace à partir de ce dépôt (UI de GitHub: Code / Codespaces / +)
 2. Installer les bibliothèques python : `pip install mlflow psycopg2 boto3` (à enlever)
 3. Démarrer les conteneurs avec la commande : `docker compose up -d` (à enlever)
 4. Accéder à l'interface utilisateur en accédant à l'URL public exposée par codespace. Dans le Temrinal, cliquer sur "Ports", puis définir l'URL du port 5001 comme public.
 
+### Créer un serveur local
+
+1. Cloner ce dépôt `git clone <URL>`
+2. Lancer le serveur MLFlow : `docker compose up -d`
+3. Accéder à l'interface utilisateur en accédant à `http://127.0.0.1:5001` dans votre navigateur.
 
 ## Utiliser le serveur 
 
