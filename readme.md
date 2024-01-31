@@ -4,14 +4,20 @@
 
 ## TODO
 
-- Codespace configure devcontainer (https://docs.github.com/fr/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/introduction-to-dev-containers)
-- train.py
-- tutorial.ipynb
-- Notebook : récupération d'un modèle, tester inférence
+- Create `devcontainer.json`
+
+Présentation des conteneurs de développement
+https://docs.github.com/fr/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/introduction-to-dev-containers
+
+Automatically forwarding a port
+- https://docs.github.com/en/codespaces/developing-in-a-codespace/forwarding-ports-in-your-codespace#automatically-forwarding-a-port
+
+- Vérifier train.py
+- Vérifier tutorial.ipynb
+- Tester avec Colab (https://drive.google.com/file/d/1kfeJkVBVEAmaY1-84BOylGPZnDAV6C-v/)
 - Add Postegresql database
 - Add artefact store
 - Ou stocker les variables d'environnement pour Artefact store et Database ?
-- Image Codespace complète
 
 ## Ressources utilisées
 
