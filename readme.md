@@ -71,9 +71,11 @@ from sklearn.model_selection import train_test_split
 from sklearn.datasets import load_diabetes
 from sklearn.ensemble import RandomForestRegressor
 
-# Set local server URIs (Both URI seems to work)
-mlflow_tracking_uri = "http://127.0.0.1:5001"
-# mlflow_tracking_uri = "http://0.0.0.0:5001"
+# Remote server URIs
+mlflow_tracking_uri = "http://url-public-exposee-par-codespace-github"
+
+# Local server URIs
+# mlflow_tracking_uri = "http://127.0.0.1:5001"
 
 # Set MLflow Tracking URI
 mlflow.set_tracking_uri(mlflow_tracking_uri)
@@ -96,9 +98,11 @@ predictions = rf.predict(X_test)
 ```
 import mlflow
 
-# Set local server URIs (Both URI seems to work)
-mlflow_tracking_uri = "http://127.0.0.1:5001"
-# mlflow_tracking_uri = "http://0.0.0.0:5001"
+# Remote server URIs
+mlflow_tracking_uri = "http://url-public-exposee-par-codespace-github"
+
+# Local server URIs
+# mlflow_tracking_uri = "http://127.0.0.1:5001"
 
 # Set MLflow Tracking URI
 mlflow.set_tracking_uri(mlflow_tracking_uri)
