@@ -6,6 +6,7 @@
 
 - Codespace configure devcontainer
 - train.py
+- tutorial.ipynb
 - Notebook : récupération d'un modèle, tester inférence
 - Add Postegresql database
 - Add artefact store
@@ -30,10 +31,6 @@ Compose Build Specification
 4. Définir l'**URI de tracking MLflow** :  
    - Option 1 : Dans le code python, `mlflow.set_tracking_uri("http://localhost:5001")` 
    - Option2 : Variable d'environnement, `export MLFLOW_TRACKING_URI=http://127.0.0.1:5000`
-
-
-1. **Serveur local** : `http://localhost:5001`
-2. **Serveur distant** : Utiliser l'URL exposée publiquement par le serveur.
 
 ### Comment utiliser ce dépôt dans Codespaces
 
