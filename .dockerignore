@@ -15,3 +15,5 @@ docker-run.sh
 __pycache__/
 
 ngrock.sh
+
+mlflow-data/

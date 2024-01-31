@@ -1,0 +1,14 @@
+version: '3'
+services:
+  mlflow-local-server:
+    # https://docs.docker.com/compose/compose-file/build/
+    build : .
+    image: davidscanu/mlflow-server:v2.0
+    container_name: mlflow-local-server
+    ports:
+      - "5001:5001"
+    environment:
+      - PORT=5001
+    volumes:
+      - ./mlflow-data:/mlflow-data
+    restart: always
