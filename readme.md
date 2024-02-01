@@ -5,10 +5,18 @@
 Vous trouverez dans ce dépôt, tous les éléments nécessaires pour démarrer un [serveur MLflow](https://mlflow.org/docs/latest/tracking/tutorials/remote-server.html) dans un [codespace](https://docs.github.com/fr/codespaces/overview) GitHub (un serveur distant accessible depuis un notebook Google Colab).
 
 Optionnellement, vous avez la possibilité d'utiliser ce dépôt pour lancer un serveur MLflow en local.
-https://github.com/DavidScanu/mlflow-local-server/projects
+
 ## A propos de MLflow
 
-[MLflow](https://mlflow.org/docs/latest/introduction/index.html) est une solution complète conçue pour répondre aux complexités inhérentes au monde du Machine Learning (ML), offrant une plate-forme unifiée pour **rationaliser le cycle de vie du Machine Learning** et encourager la collaboration entre les développeurs. Il fournit des outils pour simplifier le développement, le déploiement et la gestion de modèles, s'adressant aux chercheurs individuels, aux grandes équipes et à tout le reste. Avec les composants principaux de MLflow tels que le "tracking", le registre de modèles, les déploiements pour les LLM, l'évaluation, l'interface utilisateur d'ingénierie rapide, les recettes et les projets, les utilisateurs ont accès à la journalisation centralisée, à la gestion des modèles, aux interfaces de déploiement, aux outils d'évaluation et aux directives de structuration de projet. MLflow favorise l'efficacité, la cohérence et la traçabilité tout au long du cycle de vie du ML, permettant aux praticiens de relever les défis du développement du ML avec facilité et transparence.
+[MLflow](https://mlflow.org/docs/latest/introduction/index.html) est une solution complète conçue pour répondre aux complexités inhérentes au monde du Machine Learning (ML), offrant une plate-forme unifiée pour **rationaliser le cycle de vie du Machine Learning** et encourager la collaboration entre les développeurs. MLflow favorise l'efficacité, la cohérence et la traçabilité tout au long du cycle de vie du ML, permettant aux développeurs de relever les défis du développement du ML avec facilité et transparence.
+
+- **Tracking**: MLflow Tracking fournit à la fois une API et une interface utilisateur dédiées à la journalisation des paramètres, des versions de code, des métriques et des artefacts pendant le processus ML.
+- **Model Registry**: Une approche systématique de la gestion des modèles, aidant à gérer différentes versions de modèles et assurant une production fluide.
+- **MLflow Deployments for LLMs**: Un serveur équipé d'API standardisées pour un accès simplifié aux modèles SaaS et OSS LLM.
+- **Evaluate**: Outils conçus pour une analyse et une comparaison approfondies des modèles.
+- **Prompt Engineering UI**: Outils conçus pour une analyse et une comparaison approfondies des modèles.
+- **Recipes**: Lignes directrices pour structurer les projets ML, visant à garantir des résultats optimisés pour des scénarios de déploiement réels.
+- **Projects**: Standardisez l'empaquetage du code ML, des flux de travail et des artefacts, en définissant les dépendances et les méthodes d'exécution pour chaque projet.
 
 ## TODO
 
