@@ -144,11 +144,6 @@ print(model)
 
 - <a href="https://hub.docker.com/r/davidscanu/mlflow-server" target="_BLANK">https://hub.docker.com/r/davidscanu/mlflow-server</a>
 
-## Créer une image Docker personnalisée
-
-Utiliser le `Dockerfile` pour créer votre propre image personnalisée avec la commande :
-`docker build -t nom-de-l-image .`
-
 ## A Propos
 
 **David Scanu**, étudiant en Intelligence artificielle à l'école **Microsoft IA par Simplon et ISEN**.
