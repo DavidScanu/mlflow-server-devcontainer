@@ -6,14 +6,17 @@ Vous trouverez dans ce dépôt, tous les éléments nécessaires pour démarrer 
 
 ## TODO
 
-- Create `devcontainer.json`
+### Créatino du fichier `devcontainer.json`
 
 1. Installer environnement ubuntu et python (https://docs.github.com/fr/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/introduction-to-dev-containers)
-2. Installer les bibiolthèques `pip install mlflow psycopg2 boto3`
-3. Installer extensions : python, docker,
-4. 4. Lancer `docker compose up -d`
-5. Automatically forwarding a port (https://docs.github.com/en/codespaces/developing-in-a-codespace/forwarding-ports-in-your-codespace#automatically-forwarding-a-port)
-6. Lancer le automatiquement navigateur sur l'URL fowardée (pour afficher l'UI Mlflow)
+2. Installer extensions : python, docker, git
+3. Set le thème de VSCode en dark par défaut
+4. Installer les bibliothèques `pip install mlflow psycopg2 boto3`
+5. Lancer `docker compose up -d`
+6. Automatically forwarding a port (https://docs.github.com/en/codespaces/developing-in-a-codespace/forwarding-ports-in-your-codespace#automatically-forwarding-a-port)
+7. Lancer le automatiquement navigateur sur l'URL fowardée (pour afficher l'UI Mlflow)
+
+### Misc
 
 - renommer le dépôt GitHub
 - Add "mlruns/" à `.gitignore`
