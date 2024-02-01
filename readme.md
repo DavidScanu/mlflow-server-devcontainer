@@ -2,9 +2,13 @@
 
 # Lancer un serveur MLflow dans un codespace GitHub
 
-Vous trouverez dans ce dépôt, tous les éléments nécessaires pour démarrer un serveur MLflow dans un [codespace](https://docs.github.com/fr/codespaces/overview) GitHub (un serveur distant accessible depuis un notebook Google Colab).
+Vous trouverez dans ce dépôt, tous les éléments nécessaires pour démarrer un [serveur MLflow](https://mlflow.org/docs/latest/tracking/tutorials/remote-server.html) dans un [codespace](https://docs.github.com/fr/codespaces/overview) GitHub (un serveur distant accessible depuis un notebook Google Colab).
 
 Optionnellement, vous avez la possibilité d'utiliser ce dépôt pour lancer un serveur MLflow en local.
+https://github.com/DavidScanu/mlflow-local-server/projects
+## A propos de MLflow
+
+[MLflow](https://mlflow.org/docs/latest/introduction/index.html) est une solution complète conçue pour répondre aux complexités inhérentes au monde du Machine Learning (ML), offrant une plate-forme unifiée pour **rationaliser le cycle de vie du Machine Learning** et encourager la collaboration entre les développeurs. Il fournit des outils pour simplifier le développement, le déploiement et la gestion de modèles, s'adressant aux chercheurs individuels, aux grandes équipes et à tout le reste. Avec les composants principaux de MLflow tels que le "tracking", le registre de modèles, les déploiements pour les LLM, l'évaluation, l'interface utilisateur d'ingénierie rapide, les recettes et les projets, les utilisateurs ont accès à la journalisation centralisée, à la gestion des modèles, aux interfaces de déploiement, aux outils d'évaluation et aux directives de structuration de projet. MLflow favorise l'efficacité, la cohérence et la traçabilité tout au long du cycle de vie du ML, permettant aux praticiens de relever les défis du développement du ML avec facilité et transparence.
 
 ## TODO
 
