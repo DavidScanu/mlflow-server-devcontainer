@@ -8,7 +8,7 @@ Optionnellement, vous avez la possibilité d'utiliser ce dépôt pour lancer un 
 
 ## TODO
 
-### Créatino du fichier `devcontainer.json`
+### Création du fichier `devcontainer.json`
 
 1. Installer environnement ubuntu et python (https://docs.github.com/fr/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/introduction-to-dev-containers)
 2. Installer extensions : python, docker, git
