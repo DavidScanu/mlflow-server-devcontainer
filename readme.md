@@ -8,7 +8,7 @@ Optionnellement, vous avez la possibilité d'utiliser ce dépôt pour lancer un 
 
 ## A propos de MLflow
 
-[MLflow](https://mlflow.org/docs/latest/introduction/index.html) est une solution complète conçue pour répondre aux complexités inhérentes au monde du Machine Learning (ML), offrant une plate-forme unifiée pour **rationaliser le cycle de vie du Machine Learning** et encourager la collaboration entre les développeurs. MLflow favorise l'efficacité, la cohérence et la traçabilité tout au long du cycle de vie du ML, permettant aux développeurs de relever les défis du développement du ML avec facilité et transparence.
+[MLflow](https://mlflow.org/docs/latest/introduction/index.html) fournit une suite d'outils visant à simplifier le flux de travail ML. Il est conçu pour aider les développeurs tout au long des différentes étapes de développement et de déploiement du ML. Les fonctionnalités principales de MLflow  sont :
 
 - **Tracking**: MLflow Tracking fournit à la fois une API et une interface utilisateur dédiées à la journalisation des paramètres, des versions de code, des métriques et des artefacts pendant le processus ML.
 - **Model Registry**: Une approche systématique de la gestion des modèles, aidant à gérer différentes versions de modèles et assurant une production fluide.
