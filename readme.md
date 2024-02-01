@@ -39,9 +39,8 @@ Optionnellement, vous avez la possibilité d'utiliser ce dépôt pour lancer un 
 
 #### Utiliser le serveur MLflow depuis votre environnement distant
 
-Pour utiliser le serveur MLflow depuis votre environnement de développement, il faut définir l'**URI de tracking MLflow**.
+Pour utiliser le serveur MLflow depuis un **environnement distant** (ex: Colab, VM ou en local sur votre PC), il faut définir l'**URI de tracking MLflow** en utilisant l'une de ces deux méthodes :
 
-Pour utiliser le serveur MLflow depuis un **environnement distant** (ex: Colab, VM ou en local sur votre PC), utiliser l'une de ces deux méthodes :
 - Python : `mlflow.set_tracking_uri("http://url-public-exposee-par-codespace-github")`
 - Variable d'environnement : `export MLFLOW_TRACKING_URI=http://url-public-exposee-par-codespace-github`
 
