@@ -38,20 +38,19 @@ Vous trouverez ici, tout ce qu'il faut pour lancer un serveur MLflow dans un cod
 2. Lancer le serveur MLFlow : `docker compose up -d`
 3. Accéder à l'interface utilisateur en accédant à `http://127.0.0.1:5001` dans votre navigateur.
 
-## Utiliser le serveur 
+## Utiliser le serveur MLflow
 
-Pour utiliser le serveur MLflow, il faut définir l'**URI de tracking MLflow**, en fonction de votre environnement de développement. 
+Pour utiliser le serveur MLflow depuis votre environnement de développement, il faut définir l'**URI de tracking MLflow**.
 
-Dans un environnement local, utiliser l'une de ces deux méthodes :
-- Python : `mlflow.set_tracking_uri("http://127.0.0.1:5001")`
-- Variable d'environnement : `export MLFLOW_TRACKING_URI=http://127.0.0.1:5001`
+Démo : [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/file/d/1kfeJkVBVEAmaY1-84BOylGPZnDAV6C-v/)
 
-Alternativement, pour utiliser le serveur depuis un environnement distant (ex: Colab), utiliser l'une de ces deux méthodes :
-
+Pour utiliser le serveur MLflow depuis un environnement distant (ex: Colab, VM ou en local sur votre PC), utiliser l'une de ces deux méthodes :
 - Python : `mlflow.set_tracking_uri("http://url-public-exposee-par-codespace-github")`
 - Variable d'environnement : `export MLFLOW_TRACKING_URI=http://url-public-exposee-par-codespace-github`
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/file/d/1kfeJkVBVEAmaY1-84BOylGPZnDAV6C-v/)
+Alternativement, pour utiliser le serveur dans un environnement local (c-à-d dans le codespace lui-même), utiliser l'une de ces deux méthodes :
+- Python : `mlflow.set_tracking_uri("http://127.0.0.1:5001")`
+- Variable d'environnement : `export MLFLOW_TRACKING_URI=http://127.0.0.1:5001`
 
 ### Entraîner et tracker un modèle
 
