@@ -37,13 +37,7 @@ Optionnellement, vous avez la possibilité d'utiliser ce dépôt pour lancer un 
 3. Lancer le conteneur du serveur MLflow : `docker compose up -d` (à enlever)
 4. Accéder à l'interface utilisateur en accédant à l'URL public exposée par codespace. Dans le Terminal, cliquer sur "Ports", puis définir l'URL du port 5001 comme public.
 
-### Créer un serveur local (alternative)
-
-1. Cloner ce dépôt `git clone <URL>`
-2. Lancer le conteneur du serveur MLflow : `docker compose up -d`
-3. Accéder à l'interface utilisateur en accédant à `http://127.0.0.1:5001` dans votre navigateur.
-
-### Utiliser le serveur MLflow depuis votre environnement distant
+#### Utiliser le serveur MLflow depuis votre environnement distant
 
 Pour utiliser le serveur MLflow depuis votre environnement de développement, il faut définir l'**URI de tracking MLflow**.
 
@@ -57,7 +51,13 @@ Pour utiliser le serveur MLflow depuis un **environnement distant** (ex: Colab, 
 - Changer la variable `mlflow_tracking_uri`
 - Changer la variable `run_id`
 
-### Utiliser le serveur MLflow depuis votre environnement local (dans le codespace)
+### Alternative : Créer un serveur local
+
+1. Cloner ce dépôt `git clone <URL>`
+2. Lancer le conteneur du serveur MLflow : `docker compose up -d`
+3. Accéder à l'interface utilisateur en accédant à `http://127.0.0.1:5001` dans votre navigateur.
+
+#### Utiliser le serveur MLflow depuis votre environnement local
 
 Alternativement, pour utiliser le serveur dans un **environnement local** (c-à-d dans le codespace lui-même), utiliser l'une de ces deux méthodes :
 - Python : `mlflow.set_tracking_uri("http://127.0.0.1:5001")`
@@ -65,11 +65,11 @@ Alternativement, pour utiliser le serveur dans un **environnement local** (c-à-
 
 ### Entraîner et tracker un modèle
 
-Executer ce code dans un notebook local ou notebook Colab, en remplaçant `mlflow_tracking_uri` par l'URI de Tracking MLflow qui convient.
+Executer ce code python dans un notebook local ou notebook Colab, en remplaçant `mlflow_tracking_uri` par l'URI de Tracking MLflow qui convient.
 
 ```
 # Check MLflow Tracking with simple training example
-import mlflow
+import mlflowExecuter ce code python dans un notebook local ou notebook Colab, en remplaçant `mlflow_tracking_uri` par l'URI de Tracking MLflow qui convient.
 
 from sklearn.model_selection import train_test_split
 from sklearn.datasets import load_diabetes
@@ -98,6 +98,10 @@ predictions = rf.predict(X_test)
 ```
 
 ### Utiliser un modèle
+
+Exécuter ce code python dans un notebook local ou notebook Colab, en remplaçant :
+- `mlflow_tracking_uri` par l'URI de Tracking MLflow qui convient.
+- `run_id` par l'ID du run du modèle que vous souhaitez utiliser.
 
 ```
 import mlflow
