@@ -38,7 +38,7 @@ Vous trouverez ici, tout ce qu'il faut pour lancer un serveur MLflow dans un cod
 2. Lancer le conteneur du serveur MLflow : `docker compose up -d`
 3. Accéder à l'interface utilisateur en accédant à `http://127.0.0.1:5001` dans votre navigateur.
 
-### Utiliser le serveur MLflow
+### Utiliser le serveur MLflow depuis votre environnement distant
 
 Pour utiliser le serveur MLflow depuis votre environnement de développement, il faut définir l'**URI de tracking MLflow**.
 
@@ -51,6 +51,8 @@ Pour utiliser le serveur MLflow depuis un **environnement distant** (ex: Colab, 
 - Copier ce notebook Colab [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/file/d/1kfeJkVBVEAmaY1-84BOylGPZnDAV6C-v/view?usp=sharing)
 - Changer la variable `mlflow_tracking_uri`
 - Changer la variable `run_id`
+
+### Utiliser le serveur MLflow depuis votre environnement local (dans le codespace)
 
 Alternativement, pour utiliser le serveur dans un **environnement local** (c-à-d dans le codespace lui-même), utiliser l'une de ces deux méthodes :
 - Python : `mlflow.set_tracking_uri("http://127.0.0.1:5001")`
