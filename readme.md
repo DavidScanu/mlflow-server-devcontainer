@@ -18,7 +18,7 @@ Vous trouverez ici, tout ce qu'il faut pour lancer un serveur MLflow dans un cod
 - renommer le dépôt GitHub
 - Add "mlruns/" à `.gitignore`
 - Mettre les fichiers train.py et try-model.py dans un dossier "demo"
-- Merger tutorial.ipynb, train.py et try-model.py dans un Colab (https://drive.google.com/file/d/1kfeJkVBVEAmaY1-84BOylGPZnDAV6C-v/)
+- Merger tutorial.ipynb, train.py et try-model.py dans un Colab (https://drive.google.com/file/d/1kfeJkVBVEAmaY1-84BOylGPZnDAV6C-v/view?usp=sharing)
 - Add Postegresql database
 - Add artefact store
 - Ou stocker les variables d'environnement pour Artefact store et Database ?
@@ -29,26 +29,30 @@ Vous trouverez ici, tout ce qu'il faut pour lancer un serveur MLflow dans un cod
 
 1. Créer un codespace à partir de ce dépôt (UI de GitHub: Code / Codespaces / +)
 2. Installer les bibliothèques python : `pip install mlflow psycopg2 boto3` (à enlever)
-3. Démarrer les conteneurs avec la commande : `docker compose up -d` (à enlever)
-4. Accéder à l'interface utilisateur en accédant à l'URL public exposée par codespace. Dans le Temrinal, cliquer sur "Ports", puis définir l'URL du port 5001 comme public.
+3. Lancer le conteneur du serveur MLflow : `docker compose up -d` (à enlever)
+4. Accéder à l'interface utilisateur en accédant à l'URL public exposée par codespace. Dans le Terminal, cliquer sur "Ports", puis définir l'URL du port 5001 comme public.
 
 ### Créer un serveur local (alternative)
 
 1. Cloner ce dépôt `git clone <URL>`
-2. Lancer le serveur MLFlow : `docker compose up -d`
+2. Lancer le conteneur du serveur MLflow : `docker compose up -d`
 3. Accéder à l'interface utilisateur en accédant à `http://127.0.0.1:5001` dans votre navigateur.
 
-## Utiliser le serveur MLflow
+### Utiliser le serveur MLflow
 
 Pour utiliser le serveur MLflow depuis votre environnement de développement, il faut définir l'**URI de tracking MLflow**.
 
-Démo : [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/file/d/1kfeJkVBVEAmaY1-84BOylGPZnDAV6C-v/)
-
-Pour utiliser le serveur MLflow depuis un environnement distant (ex: Colab, VM ou en local sur votre PC), utiliser l'une de ces deux méthodes :
+Pour utiliser le serveur MLflow depuis un **environnement distant** (ex: Colab, VM ou en local sur votre PC), utiliser l'une de ces deux méthodes :
 - Python : `mlflow.set_tracking_uri("http://url-public-exposee-par-codespace-github")`
 - Variable d'environnement : `export MLFLOW_TRACKING_URI=http://url-public-exposee-par-codespace-github`
 
-Alternativement, pour utiliser le serveur dans un environnement local (c-à-d dans le codespace lui-même), utiliser l'une de ces deux méthodes :
+#### Démo
+
+- Copier ce notebook Colab [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/file/d/1kfeJkVBVEAmaY1-84BOylGPZnDAV6C-v/view?usp=sharing)
+- Changer la variable `mlflow_tracking_uri`
+- Changer la variable `run_id`
+
+Alternativement, pour utiliser le serveur dans un **environnement local** (c-à-d dans le codespace lui-même), utiliser l'une de ces deux méthodes :
 - Python : `mlflow.set_tracking_uri("http://127.0.0.1:5001")`
 - Variable d'environnement : `export MLFLOW_TRACKING_URI=http://127.0.0.1:5001`
 
