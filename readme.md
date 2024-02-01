@@ -2,7 +2,7 @@
 
 # Lancer un serveur MLflow dans un codespace GitHub
 
-Vosu trouverez ici, tout ce qu'il faut pour lancer un serveur MLflow dans un codespace GitHub (serveur distant, accessible depuis un notebook Google Colab). Alternativement, vous pouvz utiliser ce dépôt pour lancer un serveur MLflow local. 
+Vous trouverez ici, tout ce qu'il faut pour lancer un serveur MLflow dans un codespace GitHub (serveur distant, accessible depuis un notebook Google Colab). Alternativement, vous pouvz utiliser ce dépôt pour lancer un serveur MLflow local. 
 
 ## TODO
 
@@ -15,17 +15,13 @@ Vosu trouverez ici, tout ce qu'il faut pour lancer un serveur MLflow dans un cod
 5. Automatically forwarding a port (https://docs.github.com/en/codespaces/developing-in-a-codespace/forwarding-ports-in-your-codespace#automatically-forwarding-a-port)
 6. Lancer le automatiquement navigateur sur l'URL fowardée (pour afficher l'UI Mlflow)
 
-
+- renommer le dépôt GitHub
+- Add "mlruns/" à `.gitignore`
+- Mettre les fichiers train.py et try-model.py dans un dossier "demo"
 - Merger tutorial.ipynb, train.py et try-model.py dans un Colab (https://drive.google.com/file/d/1kfeJkVBVEAmaY1-84BOylGPZnDAV6C-v/)
 - Add Postegresql database
 - Add artefact store
 - Ou stocker les variables d'environnement pour Artefact store et Database ?
-
-## Ressources utilisées
-
-Remote Experiment Tracking with MLflow Tracking Server
-- https://mlflow.org/docs/latest/tracking/tutorials/remote-server.html
-
 
 ## Guide d'utilisation
 
@@ -54,6 +50,8 @@ Alternativement, pour utiliser le serveur depuis un environnement distant (ex: C
 
 - Python : `mlflow.set_tracking_uri("http://url-public-exposee-par-codespace-github")`
 - Variable d'environnement : `export MLFLOW_TRACKING_URI=http://url-public-exposee-par-codespace-github`
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/file/d/1kfeJkVBVEAmaY1-84BOylGPZnDAV6C-v/)
 
 ### Entraîner et tracker un modèle
 
