@@ -27,22 +27,14 @@ Version 1.1 : serveur MLflow local
 
 ### Création du fichier `devcontainer.json`
 
-
 1. Installer environnement ubuntu et python (Dockerfile)
 4. Installer les bibliothèques `mlflow psycopg2 boto3`
 6. Port fowarding 5001 (https://docs.github.com/en/codespaces/developing-in-a-codespace/forwarding-ports-in-your-codespace#automatically-forwarding-a-port)
-
-
+5. Lancer `docker compose up -d`
 
 3. Set le thème de VSCode en dark par défaut
 
-5. Lancer `docker compose up -d`
-
 7. Lancer le automatiquement navigateur sur l'URL fowardée (pour afficher l'UI Mlflow)
-
-
-
-
 
 ### Misc
 
