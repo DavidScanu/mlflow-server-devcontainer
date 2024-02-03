@@ -18,6 +18,11 @@ Optionnellement, vous avez la possibilité d'utiliser ce dépôt pour lancer un 
 - **Recipes**: Lignes directrices pour structurer les projets ML, visant à garantir des résultats optimisés pour des scénarios de déploiement réels.
 - **Projects**: Standardisez l'empaquetage du code ML, des flux de travail et des artefacts, en définissant les dépendances et les méthodes d'exécution pour chaque projet.
 
+## Versions
+
+Version 2.0 : Ajout de compose.yaml, serveur local, serveur distant (codespace) 
+Version 1.1 : serveur MLflow local
+
 ## TODO
 
 ### Création du fichier `devcontainer.json`
