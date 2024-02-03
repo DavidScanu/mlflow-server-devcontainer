@@ -23,10 +23,6 @@ Optionnellement, vous avez la possibilité d'utiliser ce dépôt pour lancer un 
 Version 2.0 : Ajout de compose.yaml, serveur local, serveur distant (codespace) 
 Version 1.1 : serveur MLflow local
 
-
-
-
-
 ## TODO
 
 ### Création du fichier `devcontainer.json`
