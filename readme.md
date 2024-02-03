@@ -23,23 +23,36 @@ Optionnellement, vous avez la possibilité d'utiliser ce dépôt pour lancer un 
 Version 2.0 : Ajout de compose.yaml, serveur local, serveur distant (codespace) 
 Version 1.1 : serveur MLflow local
 
+
+
+
+
 ## TODO
 
 ### Création du fichier `devcontainer.json`
 
-1. Installer environnement ubuntu et python (https://docs.github.com/fr/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/introduction-to-dev-containers)
-2. Installer extensions : python, docker, git
+
+1. Installer environnement ubuntu et python (Dockerfile)
+4. Installer les bibliothèques `mlflow psycopg2 boto3`
+6. Port fowarding 5001 (https://docs.github.com/en/codespaces/developing-in-a-codespace/forwarding-ports-in-your-codespace#automatically-forwarding-a-port)
+
+
+
 3. Set le thème de VSCode en dark par défaut
-4. Installer les bibliothèques `pip install mlflow psycopg2 boto3`
+
 5. Lancer `docker compose up -d`
-6. Automatically forwarding a port (https://docs.github.com/en/codespaces/developing-in-a-codespace/forwarding-ports-in-your-codespace#automatically-forwarding-a-port)
+
 7. Lancer le automatiquement navigateur sur l'URL fowardée (pour afficher l'UI Mlflow)
+
+
+
+
 
 ### Misc
 
 - renommer le dépôt GitHub
-- Add "mlruns/" à `.gitignore`
-- Mettre les fichiers train.py et try-model.py dans un dossier "demo"
+- Add "mlruns/" à `.gitignore` ✔️
+- Mettre les fichiers train.py et try-model.py dans un dossier "demo" ✔️
 - Merger tutorial.ipynb, train.py et try-model.py dans un Colab (https://drive.google.com/file/d/1kfeJkVBVEAmaY1-84BOylGPZnDAV6C-v/view?usp=sharing)
 - Add Postegresql database
 - Add artefact store
