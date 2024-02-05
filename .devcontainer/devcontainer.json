@@ -1,6 +1,6 @@
 {
 	"name": "MLflow Server",
-    "dockerComposeFile": "../docker-compose.yml",
+    "dockerComposeFile": "../docker-compose.yaml",
     "service": "mlflow-server",
     "workspaceFolder": "/mlflow-data",
 
