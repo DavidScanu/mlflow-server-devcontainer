@@ -1,6 +1,7 @@
 # Folder created by mlflow for storing artefact and metrics
 mlflow-data/
 mlruns/
+mlartifacts/
 
 # Developement files and folders
 test-local-server.ipynb
