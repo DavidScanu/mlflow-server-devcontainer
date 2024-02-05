@@ -1,8 +1,10 @@
 <img src="https://uploads-ssl.webflow.com/6108e07db6795265f203a636/61f90cbb8c06383f8944720e_ML%20Flow.png" width="600px" style="padding-bottom: 12px;">
 
-# Lancer un serveur MLflow dans un codespace GitHub
+# Lancer un serveur MLflow dans un conteneur Docker
 
-Vous trouverez dans ce dépôt, tous les éléments nécessaires pour démarrer **un [serveur MLflow](https://mlflow.org/docs/latest/tracking/tutorials/remote-server.html) dans un conteneur Docker**. Vous pouvez lancer ce conteneur **en local sur votre machine** ou **à distance depuis un [codespace](https://docs.github.com/fr/codespaces/overview) GitHub** (un serveur distant accessible depuis un notebook Google Colab). En lançant ce conteneur depuis un codespace, vous pouvez tracker vos expérience de machine learning depuis un **Google Colab**.
+Vous trouverez dans ce dépôt, tous les éléments nécessaires pour démarrer **un [serveur MLflow](https://mlflow.org/docs/latest/tracking/tutorials/remote-server.html) dans un conteneur Docker**. Vous pouvez lancer ce conteneur : 
+- **en local sur votre machine**,
+- **à distance depuis un [codespace](https://docs.github.com/fr/codespaces/overview) GitHub** (un serveur distant accessible depuis un notebook Google Colab). En lançant ce conteneur depuis un codespace, vous pouvez tracker vos expérience de machine learning depuis un **Google Colab**.
 
 ## Branches
 
