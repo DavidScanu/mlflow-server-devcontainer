@@ -2,21 +2,7 @@
 
 # Lancer un serveur MLflow dans un codespace GitHub
 
-Vous trouverez dans ce dépôt, tous les éléments nécessaires pour démarrer un [serveur MLflow](https://mlflow.org/docs/latest/tracking/tutorials/remote-server.html) dans un [codespace](https://docs.github.com/fr/codespaces/overview) GitHub (un serveur distant accessible depuis un notebook Google Colab).
-
-Optionnellement, vous avez la possibilité d'utiliser ce dépôt pour lancer un serveur MLflow en local.
-
-## A propos de MLflow
-
-[MLflow](https://mlflow.org/docs/latest/introduction/index.html) fournit une suite d'outils visant à simplifier le flux de travail ML. Il est conçu pour aider les développeurs tout au long des différentes étapes de développement et de déploiement du ML. Les fonctionnalités principales de MLflow  sont :
-
-- **Tracking**: MLflow Tracking fournit à la fois une API et une interface utilisateur dédiées à la journalisation des paramètres, des versions de code, des métriques et des artefacts pendant le processus ML.
-- **Model Registry**: Une approche systématique de la gestion des modèles, aidant à gérer différentes versions de modèles et assurant une production fluide.
-- **MLflow Deployments for LLMs**: Un serveur équipé d'API standardisées pour un accès simplifié aux modèles SaaS et OSS LLM.
-- **Evaluate**: Outils conçus pour une analyse et une comparaison approfondies des modèles.
-- **Prompt Engineering UI**: Outils conçus pour une analyse et une comparaison approfondies des modèles.
-- **Recipes**: Lignes directrices pour structurer les projets ML, visant à garantir des résultats optimisés pour des scénarios de déploiement réels.
-- **Projects**: Standardisez l'empaquetage du code ML, des flux de travail et des artefacts, en définissant les dépendances et les méthodes d'exécution pour chaque projet.
+Vous trouverez dans ce dépôt, tous les éléments nécessaires pour démarrer **un [serveur MLflow](https://mlflow.org/docs/latest/tracking/tutorials/remote-server.html) dans un conteneur Docker**. Vous pouvez lancer ce conteneur **en local sur votre machine** ou **à distance depuis un [codespace](https://docs.github.com/fr/codespaces/overview) GitHub** (un serveur distant accessible depuis un notebook Google Colab). En lançant ce conteneur depuis un codespace, vous pouvez tracker vos expérience de machine learning depuis un **Google Colab**.
 
 ## Versions
 
@@ -34,12 +20,24 @@ Branche **devcontainer** : COnfiguratino d'un serveur Mlflow dans un environneme
 - Ajouter un "artefact store"
 - Où stocker les variables d'environnement pour Artefact store et Database ?
 
+## A propos de MLflow
+
+[MLflow](https://mlflow.org/docs/latest/introduction/index.html) fournit une suite d'outils visant à simplifier le flux de travail ML. Il est conçu pour aider les développeurs tout au long des différentes étapes de développement et de déploiement du ML. Les fonctionnalités principales de MLflow  sont :
+
+- **Tracking**: MLflow Tracking fournit à la fois une API et une interface utilisateur dédiées à la journalisation des paramètres, des versions de code, des métriques et des artefacts pendant le processus ML.
+- **Model Registry**: Une approche systématique de la gestion des modèles, aidant à gérer différentes versions de modèles et assurant une production fluide.
+- **MLflow Deployments for LLMs**: Un serveur équipé d'API standardisées pour un accès simplifié aux modèles SaaS et OSS LLM.
+- **Evaluate**: Outils conçus pour une analyse et une comparaison approfondies des modèles.
+- **Prompt Engineering UI**: Outils conçus pour une analyse et une comparaison approfondies des modèles.
+- **Recipes**: Lignes directrices pour structurer les projets ML, visant à garantir des résultats optimisés pour des scénarios de déploiement réels.
+- **Projects**: Standardisez l'empaquetage du code ML, des flux de travail et des artefacts, en définissant les dépendances et les méthodes d'exécution pour chaque projet.
+
 ## Guide d'utilisation
 
 ### Créer un serveur MLflow dans codespace (remote server) 
 
 1. Créer un codespace à partir de ce dépôt (UI de GitHub: Code / Codespaces / +)
-2. Installer les bibliothèques python : `pip install mlflow psycopg2 boto3` (à enlever)
+2. Installer les bibliothèques python : `pip install mlflow psycopg2-binary boto3`
 3. Lancer le conteneur du serveur MLflow : `docker compose up -d` (à enlever)
 4. Accéder à l'interface utilisateur en accédant à l'URL public exposée par codespace. Dans le Terminal, cliquer sur "Ports", puis définir l'URL du port 5001 comme public.
 
@@ -59,8 +57,17 @@ Pour utiliser le serveur MLflow depuis un **environnement distant** (ex: Colab, 
 ### Alternative : Créer un serveur local
 
 1. Cloner ce dépôt `git clone <URL>`
-2. Lancer le conteneur du serveur MLflow : `docker compose up -d`
-3. Accéder à l'interface utilisateur en accédant à `http://127.0.0.1:5001` dans votre navigateur.
+2. Se déplacer à l'intérieur du dépôt GitHub : `cd mlflow-server/`
+6. Lancer le conteneur du serveur MLflow : `docker compose up -d`
+7. Accéder à l'interface utilisateur en accédant à `http://127.0.0.1:5001` ou `http://localhost:5001` dans votre navigateur.
+
+Pour tester le serveur MLflow depuis votre environnement local : 
+
+1. Créer un environnement python : `python3 -m venv .venv`
+2. Activer l'environnement python : `source .venv/bin/activate`
+3. Installer les bibliothèques python : `pip install mlflow psycopg2-binary boto3 scikit-learn==1.2.2`
+4. Entrainer un modèle : `python3 demo/train.py`. Vous devez voir apparaître un nouveau run dans l'UI MLflow.
+5. Utiliser un modèle : `python3 demo/try-model.py `. Cette commande retourne un modèle dans le Terminal. 
 
 #### Utiliser le serveur MLflow depuis votre environnement local
 
