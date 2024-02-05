@@ -1,14 +1,16 @@
 <img src="https://uploads-ssl.webflow.com/6108e07db6795265f203a636/61f90cbb8c06383f8944720e_ML%20Flow.png" width="600px" style="padding-bottom: 12px;">
 
-# Lancer un serveur MLflow dans un conteneur Docker
+# Lancer un serveur MLflow dans un Dev Container
 
-Vous trouverez dans ce dépôt, tous les éléments nécessaires pour démarrer **un [serveur MLflow](https://mlflow.org/docs/latest/tracking/tutorials/remote-server.html) dans un conteneur Docker**. Vous pouvez lancer ce conteneur : 
+Vous trouverez dans ce dépôt, tous les éléments nécessaires pour démarrer **un [serveur MLflow](https://mlflow.org/docs/latest/tracking/tutorials/remote-server.html) dans un Dev Container**. 
+
+Vous pouvez lancer ce conteneur : 
 - **en local sur votre machine**,
 - **à distance depuis un [codespace](https://docs.github.com/fr/codespaces/overview) GitHub** (un serveur distant accessible depuis un notebook Google Colab). En lançant ce conteneur depuis un codespace, vous pouvez tracker vos expérience de machine learning depuis un **Google Colab**.
 
 ## TODO
 
-- Docker Compose : changer le nom par défaut de l'image construite avec le Dockerfile (et du container)
+- 
 - Merger tutorial.ipynb, train.py et try-model.py dans un Colab (https://drive.google.com/file/d/1kfeJkVBVEAmaY1-84BOylGPZnDAV6C-v/view?usp=sharing)
 - Ajouter une base de donnée Postegresql
 - Ajouter un "artefact store"
