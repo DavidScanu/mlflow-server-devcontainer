@@ -5,15 +5,7 @@ Dockerfile
 .venv/
 **/.env/
 **/.venv/
+__pycache__/
 
 .git
 **/.git
-
-playground.ipynb
-docker-run.sh
-
-__pycache__/
-
-ngrock.sh
-
-mlflow-data/
