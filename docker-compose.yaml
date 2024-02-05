@@ -8,4 +8,5 @@ services:
       - PORT=5001
     volumes:
       - ./mlflow-data:/mlflow-data
+      - ../mlflow-server-devcontainer:/workspace/mlflow-server-devcontainer
     restart: always
