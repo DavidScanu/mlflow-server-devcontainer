@@ -30,7 +30,7 @@ Vous trouverez dans ce dépôt, tous les éléments nécessaires pour démarrer 
 
 ### Alternative : Créer un serveur local
 
-1. Cloner ce dépôt `git clone <URL>`
+1. Cloner ce dépôt `git clone https://github.com/DavidScanu/mlflow-server.git`
 2. Se déplacer à l'intérieur du dépôt GitHub : `cd mlflow-server/`
 6. Lancer le conteneur du serveur MLflow : `docker compose up -d`
 7. Accéder à l'interface utilisateur en accédant à `http://127.0.0.1:5001` ou `http://localhost:5001` dans votre navigateur.
@@ -43,7 +43,7 @@ Pour tester le serveur MLflow depuis votre environnement local :
 2. Activer l'environnement python : `source .venv/bin/activate`
 3. Installer les bibliothèques python : `pip install mlflow psycopg2-binary boto3 scikit-learn==1.2.2`
 4. Entrainer un modèle : `python3 demo/train.py`. Vous devez voir apparaître un nouveau run dans l'UI MLflow.
-5. Utiliser un modèle : `python3 demo/try-model.py `. Cette commande retourne un modèle dans le Terminal. 
+5. Utiliser un modèle : `python3 demo/try-model.py`. Cette commande retourne un modèle dans le Terminal. 
 
 ### Créer un serveur MLflow dans codespace (remote server) 
 
