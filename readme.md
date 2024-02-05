@@ -4,13 +4,10 @@
 
 Vous trouverez dans ce dépôt, tous les éléments nécessaires pour démarrer **un [serveur MLflow](https://mlflow.org/docs/latest/tracking/tutorials/remote-server.html) dans un conteneur Docker**. Vous pouvez lancer ce conteneur **en local sur votre machine** ou **à distance depuis un [codespace](https://docs.github.com/fr/codespaces/overview) GitHub** (un serveur distant accessible depuis un notebook Google Colab). En lançant ce conteneur depuis un codespace, vous pouvez tracker vos expérience de machine learning depuis un **Google Colab**.
 
-## Versions
+## Branches
 
-Branche **Master** : Serveur MLflow fonctionnant dans un container Docker.
-Branche **devcontainer** : COnfiguratino d'un serveur Mlflow dans un environnement de développement basé sur une image Docker(Dev Container)
-
-- Version 2.0 : Ajout de compose.yaml
-- Version 1.1 : serveur MLflow local
+- Branche **Master** : Serveur MLflow fonctionnant dans un container Docker.
+- Branche **devcontainer** : Configuration d'un serveur Mlflow dans un environnement de développement basé sur une image Docker(Dev Container).
 
 ## TODO
 
