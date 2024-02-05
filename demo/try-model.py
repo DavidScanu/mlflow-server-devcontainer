@@ -6,7 +6,8 @@ mlflow_tracking_uri = "http://127.0.0.1:5001"
 
 mlflow.set_tracking_uri(mlflow_tracking_uri)
 
-run_id = "d323fb373cfa434ea8d5ecdfd80464f8"  # You can find run ID in the Tracking UI
+# run_id = "d323fb373cfa434ea8d5ecdfd80464f8"  # You can find run ID in the Tracking UI
+run_id = input('Please enter your RUN ID :')
 artifact_path = "model"
 
 # Download artifact via the tracking server

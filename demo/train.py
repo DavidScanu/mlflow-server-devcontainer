@@ -6,8 +6,8 @@ from sklearn.datasets import load_diabetes
 from sklearn.ensemble import RandomForestRegressor
 
 # Set local server URIs (Both URI seems to work)
-mlflow_tracking_uri = "http://127.0.0.1:5001"
-# mlflow_tracking_uri = "http://0.0.0.0:5001"
+# mlflow_tracking_uri = "http://127.0.0.1:5001"
+mlflow_tracking_uri = "http://0.0.0.0:5001"
 
 mlflow.set_tracking_uri(mlflow_tracking_uri)
 
