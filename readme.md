@@ -52,15 +52,22 @@ Vous pouvez lancer ce conteneur :
 2. Accéder à l'interface utilisateur en accédant à l'URL public exposée par codespace. Dans le Terminal, cliquer sur "Ports", puis définir l'URL du port 5001 comme public.
 
 
-### Démo
+## Démonstration
 
-Pour tester le serveur MLflow depuis votre environnement local : 
+### Tester le serveur MLflow depuis le Dev Container 
 
 1. Créer un environnement python : `python3 -m venv .venv`
 2. Activer l'environnement python : `source .venv/bin/activate`
 3. Installer les bibliothèques python : `pip install mlflow psycopg2-binary boto3 scikit-learn==1.2.2`
 4. Entrainer un modèle : `python3 demo/train.py`. Vous devez voir apparaître un nouveau run dans l'UI MLflow.
 5. Utiliser un modèle : `python3 demo/try-model.py`. Entrez le numero de Run (Run ID) dans le Terminal. Cette commande retourne un modèle dans le Terminal. 
+
+### Utiliser le serveur MLflow depuis votre environnement local
+
+Pour utiliser le serveur dans un **environnement local**, utiliser l'une de ces deux méthodes :
+
+- Python : `mlflow.set_tracking_uri("http://127.0.0.1:5001")` ou `mlflow.set_tracking_uri("http://localhost:5001")`
+- Variable d'environnement : `export MLFLOW_TRACKING_URI=http://127.0.0.1:5001` ou `export MLFLOW_TRACKING_URI=http://localhost:5001`
 
 ### Utiliser le serveur MLflow depuis votre environnement distant
 
@@ -75,12 +82,6 @@ Voici un exemple :
 - Changer la variable `mlflow_tracking_uri`
 - Changer la variable `run_id`
 
-
-#### Utiliser le serveur MLflow depuis votre environnement local
-
-Alternativement, pour utiliser le serveur dans un **environnement local** (c-à-d dans le codespace lui-même), utiliser l'une de ces deux méthodes :
-- Python : `mlflow.set_tracking_uri("http://127.0.0.1:5001")` ou `mlflow.set_tracking_uri("http://localhost:5001")`
-- Variable d'environnement : `export MLFLOW_TRACKING_URI=http://127.0.0.1:5001` ou `export MLFLOW_TRACKING_URI=http://localhost:5001`
 
 
 ### Entraîner et tracker un modèle
