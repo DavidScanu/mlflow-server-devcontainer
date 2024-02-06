@@ -15,7 +15,7 @@ Vous pouvez lancer ce conteneur :
 - Base de donnée Postgresql
 - Artefact Store
 - Où stocker les variables d'environnement pour Artefact store et Database ?
-- Merger tutorial.ipynb, train.py et try-model.py dans un Colab (https://drive.google.com/file/d/1kfeJkVBVEAmaY1-84BOylGPZnDAV6C-v/view?usp=sharing)
+- Merger tutorial.ipynb, train.py et try-model.py dans un Colab
 
 ## A propos de MLflow
 
