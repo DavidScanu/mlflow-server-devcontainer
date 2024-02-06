@@ -5,16 +5,24 @@
 Vous trouverez dans ce dépôt, tous les éléments nécessaires pour démarrer **un [serveur MLflow](https://mlflow.org/docs/latest/tracking/tutorials/remote-server.html) dans un Dev Container**. 
 
 Vous pouvez lancer ce conteneur : 
-- **en local sur votre machine**,
-- **à distance depuis un [codespace](https://docs.github.com/fr/codespaces/overview) GitHub** (un serveur distant accessible depuis un notebook Google Colab). En lançant ce conteneur depuis un codespace, vous pouvez tracker vos expérience de machine learning depuis un **Google Colab**.
+- **en local sur votre machine** avec Docker,
+- **à distance depuis un [codespace](https://docs.github.com/fr/codespaces/overview) GitHub** (un serveur distant accessible depuis un notebook Google Colab). En lançant ce conteneur depuis un codespace, vous pouvez tracker vos expérience de machine learning à distance (depuis un **Google Colab** par exemple).
+
+## Liste de fonctionnalités
+
+- Python3, Git ✔️
+- Update pip et `pip install mlflow psycopg2-binary boto3` ✔️
+- Extensions VS Code : Python ✔️
+- Customisation VS Code : 'GitHub Default Dark' 
+- Port Forwarding : 5001 et localhost 
+- Dossier `mlflow` pour bind mount ✔️
+- Base de donnée Postgresql
+- Artefact Store
+- Où stocker les variables d'environnement pour Artefact store et Database ?
 
 ## TODO
 
-- 
 - Merger tutorial.ipynb, train.py et try-model.py dans un Colab (https://drive.google.com/file/d/1kfeJkVBVEAmaY1-84BOylGPZnDAV6C-v/view?usp=sharing)
-- Ajouter une base de donnée Postegresql
-- Ajouter un "artefact store"
-- Où stocker les variables d'environnement pour Artefact store et Database ?
 
 ## A propos de MLflow
 
@@ -30,12 +38,26 @@ Vous pouvez lancer ce conteneur :
 
 ## Guide d'utilisation
 
-### Alternative : Créer un serveur local
+### Créer un serveur local
 
-1. Cloner ce dépôt `git clone https://github.com/DavidScanu/mlflow-server.git`
+1. Cloner ce dépôt `git clone https://github.com/DavidScanu/mlflow-server.git` dans un dossier sur votre machine
 2. Se déplacer à l'intérieur du dépôt GitHub : `cd mlflow-server/`
-6. Lancer le conteneur du serveur MLflow : `docker compose up -d`
+6. Dans VS Code, **Dev Containers: Reopen in container**.
 7. Accéder à l'interface utilisateur en accédant à `http://127.0.0.1:5001` ou `http://localhost:5001` dans votre navigateur.
+
+### Créer un serveur MLflow dans codespace (remote server) 
+
+1. Créer un codespace à partir de ce dépôt (UI de GitHub: Code / Codespaces / +)
+2. Installer les bibliothèques python : `pip install mlflow psycopg2-binary boto3`
+3. Lancer le conteneur du serveur MLflow : `docker compose up -d` (à enlever)
+4. Accéder à l'interface utilisateur en accédant à l'URL public exposée par codespace. Dans le Terminal, cliquer sur "Ports", puis définir l'URL du port 5001 comme public.
+
+
+
+
+
+
+
 
 #### Démo
 
@@ -46,13 +68,6 @@ Pour tester le serveur MLflow depuis votre environnement local :
 3. Installer les bibliothèques python : `pip install mlflow psycopg2-binary boto3 scikit-learn==1.2.2`
 4. Entrainer un modèle : `python3 demo/train.py`. Vous devez voir apparaître un nouveau run dans l'UI MLflow.
 5. Utiliser un modèle : `python3 demo/try-model.py`. Cette commande retourne un modèle dans le Terminal. 
-
-### Créer un serveur MLflow dans codespace (remote server) 
-
-1. Créer un codespace à partir de ce dépôt (UI de GitHub: Code / Codespaces / +)
-2. Installer les bibliothèques python : `pip install mlflow psycopg2-binary boto3`
-3. Lancer le conteneur du serveur MLflow : `docker compose up -d` (à enlever)
-4. Accéder à l'interface utilisateur en accédant à l'URL public exposée par codespace. Dans le Terminal, cliquer sur "Ports", puis définir l'URL du port 5001 comme public.
 
 #### Utiliser le serveur MLflow depuis votre environnement distant
 
@@ -73,6 +88,8 @@ Voici un exemple :
 Alternativement, pour utiliser le serveur dans un **environnement local** (c-à-d dans le codespace lui-même), utiliser l'une de ces deux méthodes :
 - Python : `mlflow.set_tracking_uri("http://127.0.0.1:5001")` ou `mlflow.set_tracking_uri("http://localhost:5001")`
 - Variable d'environnement : `export MLFLOW_TRACKING_URI=http://127.0.0.1:5001` ou `export MLFLOW_TRACKING_URI=http://localhost:5001`
+
+
 
 ### Entraîner et tracker un modèle
 
