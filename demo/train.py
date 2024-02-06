@@ -5,7 +5,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.datasets import load_diabetes
 from sklearn.ensemble import RandomForestRegressor
 
-# Set local server URIs (Both URI seems to work)
+# Set local server URIs
 mlflow_tracking_uri = "http://localhost:5001"
 # mlflow_tracking_uri = "http://127.0.0.1:5001"
 # mlflow_tracking_uri = "http://0.0.0.0:5001" # doesn't work in local env
