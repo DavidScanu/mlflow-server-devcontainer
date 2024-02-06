@@ -2,16 +2,23 @@
 	"name": "MLflow Server",
     "dockerComposeFile": "../docker-compose.yaml",
     "service": "mlflow-server",
-    "workspaceFolder": "/mlflow-data",
-	// "workspaceFolder": "/workspace/mlflow-server-devcontainer",
+    "workspaceFolder": "/mlflow",
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	"forwardPorts": [
-		5001
-	],
+	"forwardPorts": [5001],
 
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	"features": {
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {},
+		"ghcr.io/devcontainers/features/git:1": {}
+	},
+
+	// VS Code customization inside the container
 	"customizations": {
 		"vscode": {
+			"settings": {
+				"workbench.colorTheme": "Default Dark Modern"
+			},
 			"extensions": [
 				"ms-vscode-remote.vscode-remote-extensionpack",
 				"ms-azuretools.vscode-docker",
@@ -23,12 +30,6 @@
 				"bierner.markdown-preview-github-styles"
 			]
 		}
-	},
-
-	// Features to add to the dev container. More info: https://containers.dev/features.
-	"features": {
-		"ghcr.io/devcontainers/features/docker-in-docker:2": {},
-		"ghcr.io/devcontainers/features/git:1": {}
 	}
 
 	// Use 'postCreateCommand' to run commands after the container is created.

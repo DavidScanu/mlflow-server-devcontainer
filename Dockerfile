@@ -1,6 +1,6 @@
 FROM python:3.10-slim
 
-WORKDIR /mlflow-data
+WORKDIR /mlflow/mlflow-data
 
 RUN python -m pip install --upgrade pip
 
