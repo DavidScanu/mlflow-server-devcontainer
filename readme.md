@@ -8,21 +8,13 @@ Vous pouvez lancer ce conteneur :
 - **en local sur votre machine** : en clonant ce dépôt et en lançant un Dev Container avec VS Code et Docker,
 - **à distance depuis un [codespace](https://docs.github.com/fr/codespaces/overview) GitHub** : en lançant ce dépôt avec codespace.
 
-## Liste de fonctionnalités
-
-- Python3, Git ✔️
-- Update pip et `pip install mlflow psycopg2-binary boto3` ✔️
-- Extensions VS Code : Python ✔️
-- Customisation VS Code : 'GitHub Default Dark'  ✔️
-- Port Forwarding : 5001 et localhost 
-- Dossier `mlflow` pour bind mount ✔️
-- Base de donnée Postgresql
-- Artefact Store
-- Où stocker les variables d'environnement pour Artefact store et Database ?
 
 ## TODO
 
-- Tester sur codespace
+- Port Forwarding : 5001 et localhost 
+- Base de donnée Postgresql
+- Artefact Store
+- Où stocker les variables d'environnement pour Artefact store et Database ?
 - Merger tutorial.ipynb, train.py et try-model.py dans un Colab (https://drive.google.com/file/d/1kfeJkVBVEAmaY1-84BOylGPZnDAV6C-v/view?usp=sharing)
 
 ## A propos de MLflow
