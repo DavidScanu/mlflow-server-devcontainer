@@ -8,4 +8,6 @@ COPY requirements.txt .
 
 RUN pip install -r requirements.txt
 
-CMD mlflow server --port $PORT --host 0.0.0.0
+RUN echo $BACKEND_STORE_URI
+
+CMD mlflow server --port $PORT --host 0.0.0.0 --backend-store-uri $BACKEND_STORE_URI
