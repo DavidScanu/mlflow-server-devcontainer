@@ -64,7 +64,7 @@ Pour utiliser le serveur distant MLflow depuis un notebook Colab, VM ou depuis v
 
 Voici un exemple : 
 
-- Copier ce notebook Colab [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/file/d/1kfeJkVBVEAmaY1-84BOylGPZnDAV6C-v/view?usp=sharing)
+- Copier ce notebook Colab [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/file/d/1kfeJkVBVEAmaY1-84BOylGPZnDAV6C-v/)
 - Changer la variable `mlflow_tracking_uri`
 - Changer la variable `run_id`
 
