@@ -6,6 +6,7 @@ services:
       - "5001:5001"
     environment:
       - PORT=5001
+      - BACKEND_STORE_URI=$BACKEND_STORE_URI
     volumes:
       - .:/mlflow
     restart: always
