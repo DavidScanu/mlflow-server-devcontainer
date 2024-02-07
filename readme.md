@@ -11,10 +11,7 @@ Vous pouvez lancer ce conteneur :
 
 ## TODO
 
-- Port Forwarding : 5001 et localhost 
-- Base de donnée Postgresql
-- Artefact Store
-- Où stocker les variables d'environnement pour Artefact store et Database ?
+- Port Forwarding : 5001 (rendre ce port "public")
 - Merger tutorial.ipynb, train.py et try-model.py dans un Colab
 
 ## A propos de MLflow
