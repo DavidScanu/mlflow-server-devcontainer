@@ -5,7 +5,14 @@
     "workspaceFolder": "/mlflow",
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	"forwardPorts": ["5001:5001"],
+	"forwardPorts": [5001],
+
+	"portsAttributes": {
+		"5001": {
+			"label": "MLflow server port",
+			"onAutoForward": "openBrowser"
+		}
+	}
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	"features": {
