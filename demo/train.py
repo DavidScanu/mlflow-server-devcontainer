@@ -1,5 +1,6 @@
 import mlflow
 from mlflow.models import infer_signature
+from mlflow import MlflowClient
 
 import pandas as pd
 from sklearn import datasets
@@ -7,6 +8,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 
+
+# Dummy machine learning training
 
 # Load the Iris dataset
 X, y = datasets.load_iris(return_X_y=True)
@@ -35,14 +38,31 @@ y_pred = lr.predict(X_test)
 accuracy = accuracy_score(y_test, y_pred)
 
 
+
+# MLFlow Tracking
+
+def print_logged_info(r):
+    print("")
+    print("🏃 MLflow Run Infos :")
+    tags = {k: v for k, v in r.data.tags.items() if not k.startswith("mlflow.")}
+    artifacts = [f.path for f in MlflowClient().list_artifacts(r.info.run_id, "model")]
+    print(f"⚗️ run_id: {r.info.run_id}")
+    print(f"⚡ artifacts: {artifacts}")
+    print(f"⚙️ params: {r.data.params}")
+    print(f"📝 metrics: {r.data.metrics}")
+    print(f"🏷️tags: {tags}")
+    print()
+
+
+
 # Set our tracking server uri for logging
 mlflow.set_tracking_uri(uri="http://localhost:5001")
 
 # Create a new MLflow Experiment
-mlflow.set_experiment("MLflow Quickstart")
+mlflow.set_experiment("MLflow Server Demo Local")
 
 # Start an MLflow run
-with mlflow.start_run():
+with mlflow.start_run() as run:
     # Log the hyperparameters
     mlflow.log_params(params)
 
@@ -50,7 +70,7 @@ with mlflow.start_run():
     mlflow.log_metric("accuracy", accuracy)
 
     # Set a tag that we can use to remind ourselves what this run was for
-    mlflow.set_tag("Training Info", "Basic LR model for iris data")
+    mlflow.set_tag("Mlflow Server Demo", "Basic LR model for iris data")
 
     # Infer the model signature
     signature = infer_signature(X_train, lr.predict(X_train))
@@ -58,8 +78,11 @@ with mlflow.start_run():
     # Log the model
     model_info = mlflow.sklearn.log_model(
         sk_model=lr,
-        artifact_path="iris_model",
+        artifact_path="model",
         signature=signature,
-        input_example=X_train,
-        registered_model_name="tracking-quickstart",
+        input_example=X_train
+        # registered_model_name="tracking-quickstart",
     )
+
+# fetch the auto logged parameters and metrics for ended run
+print_logged_info(mlflow.get_run(run_id=run.info.run_id))

@@ -2,16 +2,13 @@ import mlflow
 
 # Set local server URIs
 mlflow_tracking_uri = "http://localhost:5001"
-# mlflow_tracking_uri = "http://127.0.0.1:5001"
-# mlflow_tracking_uri = "http://0.0.0.0:5001"
 
 mlflow.set_tracking_uri(mlflow_tracking_uri)
 
-# run_id = "d323fb373cfa434ea8d5ecdfd80464f8"
 # Prompts user with the Run ID from MLflow run
 # You can find run ID in the Tracking UI
 while True:
-    run_id = input('Please enter your RUN ID : ')
+    run_id = input('Please enter your 🏃 RUN ID : ')
     if run_id.strip() != '':
         break
 
@@ -25,8 +22,13 @@ try:
     # Load the model
     model = mlflow.sklearn.load_model(local_path)
 
+    # Load the model back for predictions as a generic Python Function model
+    # loaded_model = mlflow.pyfunc.load_model(model_info.model_uri)
+
     # If the model prints, everything works!
-    print(f"🤖 Model : {model}")
+    print(f"🚀 Model : {model}")
 except:
   print("❌ Invalid Run ID.")
 
+
+# https://mlflow.org/docs/latest/getting-started/intro-quickstart/index.html
