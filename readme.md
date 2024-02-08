@@ -4,12 +4,12 @@
 
 Vous trouverez dans ce dépôt, tous les éléments nécessaires pour démarrer un [serveur MLflow](https://mlflow.org/docs/latest/tracking/tutorials/remote-server.html) dans un [codespace](https://docs.github.com/fr/codespaces/overview) ([Dev Container](https://containers.dev/)). 
 
-## TODO
+## 🧾 TODO
 
 - Améliorer le "Port Forwarding" : 5001 (rendre ce port "public" et ouvrir le navigateur automatiquement)
 - Merger tutorial.ipynb, train.py et try-model.py dans un Colab
 
-## A propos de MLflow
+## 🔮 A propos de MLflow
 
 [MLflow](https://mlflow.org/docs/latest/introduction/index.html) fournit une suite d'outils visant à simplifier le flux de travail ML. Il est conçu pour aider les développeurs tout au long des différentes étapes de développement et de déploiement du ML. Les fonctionnalités principales de MLflow  sont :
 
@@ -21,7 +21,7 @@ Vous trouverez dans ce dépôt, tous les éléments nécessaires pour démarrer 
 - **Recipes**: Lignes directrices pour structurer les projets ML, visant à garantir des résultats optimisés pour des scénarios de déploiement réels.
 - **Projects**: Standardisez l'empaquetage du code ML, des flux de travail et des artefacts, en définissant les dépendances et les méthodes d'exécution pour chaque projet.
  
-## Lancer un serveur MLflow dans codespace (serveur distant) 
+## 🚀 Lancer un serveur MLflow dans codespace (serveur distant) 
 
 ### 1. Créer un nouveau codespace à partir de ce dépôt (UI de GitHub: Code / Codespaces / +)
 
@@ -54,31 +54,19 @@ Démonstration et exemples de code dans ce notebook : [![Open In Colab](https://
 
 <img src="images/mlflow-server-inside-codespace-04-colab-secrets.png" width=800>
 
-## Alternative : Lancer un serveur MLflow local
+## 🪐 Alternative : Lancer un serveur MLflow local
 
 1. Cloner ce dépôt `git clone https://github.com/DavidScanu/mlflow-server.git` dans un dossier sur votre machine
 2. Se déplacer à l'intérieur du dépôt GitHub : `cd mlflow-server/`
-3. Dans VS Code, ouvrir la palette de commande (Ctrl+Alt+P) et chercher **Dev Containers: Reopen in container**.
-4. Accéder à l'interface utilisateur en accédant à `http://localhost:5001` ou `http://127.0.0.1:5001` dans votre navigateur.
-
-### Démonstration
+3. Ajouter les variables d'environnement 🔑 dans un fichier `.env` : `MLFLOW_TRACKING_URI`, `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`.
+4. Dans VS Code, ouvrir la palette de commande (Ctrl+Alt+P) et chercher **Dev Containers: Reopen in container**.
+5. Accéder à l'interface utilisateur en accédant à `http://localhost:5001` ou `http://127.0.0.1:5001` dans votre navigateur.
 
 Pour vérifier que le serveur MLflow est bien lancé et fonctionnel, exécuter le code python disponible dans le dossier `/demo` :
 
 1. **Entrainer un modèle** : `python3 demo/train.py`. Vous devez voir apparaître un nouveau run dans l'UI MLflow et dans le Terminal.
 2. **Copier le numéro de Run** (Run ID).
 3. **Utiliser un modèle** : `python3 demo/try-model.py`. Entrez le numero de Run (Run ID) dans le Terminal. Cette commande retourne un modèle dans le Terminal.
-
-### Utiliser le serveur MLflow local
-
-1. Créer un environnement python : `python3 -m venv .venv`
-2. Activer l'environnement python : `source .venv/bin/activate`
-3. Installer les bibliothèques python : `pip install mlflow psycopg2-binary boto3 scikit-learn==1.2.2`
-
-Pour utiliser le serveur dans un **environnement local**, utiliser l'une de ces deux méthodes :
-
-- Dans le code Python : `mlflow.set_tracking_uri("http://127.0.0.1:5001")` ou `mlflow.set_tracking_uri("http://localhost:5001")`
-- Définir une variable d'environnement : `export MLFLOW_TRACKING_URI=http://127.0.0.1:5001` ou `export MLFLOW_TRACKING_URI=http://localhost:5001`
 
 ## A Propos
 
