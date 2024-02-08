@@ -57,7 +57,7 @@ def print_logged_info(r):
 mlflow.set_tracking_uri(uri="http://localhost:5001")
 
 # Create a new MLflow Experiment
-mlflow.set_experiment("MLflow Server Demo Local")
+mlflow.set_experiment("MLflow Server Demo Codespace")
 
 # Start an MLflow run
 with mlflow.start_run() as run:
@@ -68,7 +68,7 @@ with mlflow.start_run() as run:
     mlflow.log_metric("accuracy", accuracy)
 
     # Set a tag that we can use to remind ourselves what this run was for
-    mlflow.set_tag("Mlflow Server Demo", "Basic LR model for iris data")
+    mlflow.set_tag("Demo", "Basic LR model for iris data")
 
     # Infer the model signature
     signature = infer_signature(X_train, lr.predict(X_train))
