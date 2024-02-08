@@ -53,8 +53,6 @@ def print_logged_info(r):
     print(f"🏷️tags: {tags}")
     print()
 
-
-
 # Set our tracking server uri for logging
 mlflow.set_tracking_uri(uri="http://localhost:5001")
 

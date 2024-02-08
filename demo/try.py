@@ -21,10 +21,7 @@ try:
     local_path = mlflow.artifacts.download_artifacts(mlflow_artifact_uri)
     # Load the model
     model = mlflow.sklearn.load_model(local_path)
-
-    # Load the model back for predictions as a generic Python Function model
-    # loaded_model = mlflow.pyfunc.load_model(model_info.model_uri)
-
+    
     # If the model prints, everything works!
     print(f"🚀 Model : {model}")
 except:
