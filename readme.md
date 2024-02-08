@@ -2,11 +2,7 @@
 
 # Lancer un serveur MLflow dans un codespace (Dev Container)
 
-Vous trouverez dans ce dépôt, tous les éléments nécessaires pour démarrer un [serveur MLflow](https://mlflow.org/docs/latest/tracking/tutorials/remote-server.html) dans un [Dev Container](https://containers.dev/). 
-
-Vous pouvez lancer ce conteneur : 
-- **en local sur votre machine** : en clonant ce dépôt et en lançant un Dev Container avec VS Code et Docker,
-- **à distance depuis un [codespace](https://docs.github.com/fr/codespaces/overview) GitHub** : en lançant ce dépôt avec codespace.
+Vous trouverez dans ce dépôt, tous les éléments nécessaires pour démarrer un [serveur MLflow](https://mlflow.org/docs/latest/tracking/tutorials/remote-server.html) dans un [codespace](https://docs.github.com/fr/codespaces/overview) ([Dev Container](https://containers.dev/)). 
 
 ## TODO
 
