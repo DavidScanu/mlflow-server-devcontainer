@@ -7,7 +7,8 @@ Vous trouverez dans ce dépôt, tous les éléments nécessaires pour démarrer 
 ## 🧾 TODO
 
 - Améliorer le "Port Forwarding" : 5001 (rendre ce port "public" et ouvrir le navigateur automatiquement)
-- Merger tutorial.ipynb, train.py et try-model.py dans un Colab
+- refaire tutorial.ipynb
+- Variables d'environnement dans Dev Container local
 
 ## 🔮 A propos de MLflow
 
