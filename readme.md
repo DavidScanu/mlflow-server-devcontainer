@@ -26,7 +26,7 @@ Vous trouverez dans ce dépôt, tous les éléments nécessaires pour démarrer 
  
 ## 🚀 Lancer un serveur MLflow dans codespace (serveur distant) 
 
-### 1. Renseignez ces variables d'environnement dans Codespaces secrets
+### 1. Renseignez les variables d'environnement dans vos réglages GitHub ("Settings")
 
 Il est possible de sauvegarder des variables d'environnement pour vos codesapce. Allez dans "Settings" / "Secrets and variables" / "Codespaces", puis renseignez les variables suivantes : 
 
