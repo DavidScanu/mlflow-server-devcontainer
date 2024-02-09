@@ -1,4 +1,6 @@
-<img src="images/bandeau-mlflow-codespaces.png" width="980px">
+<picture>
+  <img src="images/bandeau-mlflow-codespaces.png" alt="Mlflow inside a codespace header" width="980px">
+</picture>
 
 # Lancer un serveur MLflow dans un codespace (Dev Container)
 
