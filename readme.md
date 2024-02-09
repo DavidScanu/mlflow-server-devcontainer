@@ -1,4 +1,4 @@
-<img src="https://uploads-ssl.webflow.com/6108e07db6795265f203a636/61f90cbb8c06383f8944720e_ML%20Flow.png" width="600px" style="padding-bottom: 12px;">
+<img src="https://uploads-ssl.webflow.com/6108e07db6795265f203a636/61f90cbb8c06383f8944720e_ML%20Flow.png" width="980px" style="padding-bottom: 12px;">
 
 # Lancer un serveur MLflow dans un codespace (Dev Container)
 
