@@ -26,16 +26,16 @@ Vous trouverez dans ce dépôt, tous les éléments nécessaires pour démarrer 
  
 ## 🚀 Lancer un serveur MLflow dans codespace (serveur distant) 
 
-### 1. Créer un nouveau codespace à partir de ce dépôt (UI de GitHub: Code / Codespaces / +)
-
-<picture>
-  <img src="images/mlflow-server-inside-codespace-02-create-codespace-on-master.png" width=980>
-</picture>
-
-### 2. Renseignez ces variables d'environnement dans Codespaces secrets
+### 1. Renseignez ces variables d'environnement dans Codespaces secrets
 
 <picture>
   <img src="images/mlflow-server-inside-codespace-01-codespaces-secrets.png" width=980>
+</picture>
+
+### 2. Créer un nouveau codespace à partir de ce dépôt (UI de GitHub: Code / Codespaces / +)
+
+<picture>
+  <img src="images/mlflow-server-inside-codespace-02-create-codespace-on-master.png" width=980>
 </picture>
 
 ### 3. Ouvrir le port 5011
