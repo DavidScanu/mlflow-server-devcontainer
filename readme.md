@@ -69,7 +69,7 @@ Pour vérifier que le serveur MLflow est bien lancé et fonctionnel, exécuter l
 2. **Copier le numéro de Run** (Run ID).
 3. **Utiliser un modèle** : `python3 demo/try-model.py`. Entrez le numero de Run (Run ID) dans le Terminal. Cette commande retourne un modèle dans le Terminal.
 
-## A Propos
+## 👾 A Propos
 
 **David Scanu**, étudiant en Intelligence artificielle à l'école **Microsoft IA par Simplon et ISEN**.
 
