@@ -28,6 +28,12 @@ Vous trouverez dans ce dépôt, tous les éléments nécessaires pour démarrer 
 
 ### 1. Renseignez ces variables d'environnement dans Codespaces secrets
 
+Il est possible de sauvegarder des variables d'environnement pour vos codesapce. Allez dans "Settings" / "Secrets and variables" / "Codespaces", puis renseignez les variables suivantes : 
+- 
+-
+-
+-
+
 <picture>
   <img src="images/mlflow-server-inside-codespace-01-codespaces-secrets.png" width=980>
 </picture>
