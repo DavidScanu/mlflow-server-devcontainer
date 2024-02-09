@@ -29,10 +29,11 @@ Vous trouverez dans ce dépôt, tous les éléments nécessaires pour démarrer 
 ### 1. Renseignez ces variables d'environnement dans Codespaces secrets
 
 Il est possible de sauvegarder des variables d'environnement pour vos codesapce. Allez dans "Settings" / "Secrets and variables" / "Codespaces", puis renseignez les variables suivantes : 
-- 
--
--
--
+
+- BACKEND_STORE_URI
+- AWS_ACCESS_KEY_ID
+- AWS_SECRET_ACCESS_KEY
+- ARTIFACT_STORE_URI
 
 <picture>
   <img src="images/mlflow-server-inside-codespace-01-codespaces-secrets.png" width=980>
