@@ -28,23 +28,31 @@ Vous trouverez dans ce dépôt, tous les éléments nécessaires pour démarrer 
 
 ### 1. Créer un nouveau codespace à partir de ce dépôt (UI de GitHub: Code / Codespaces / +)
 
-<img src="images/mlflow-server-inside-codespace-02-create-codespace-on-master.png" width=980>
+<picture>
+  <img src="images/mlflow-server-inside-codespace-02-create-codespace-on-master.png" width=980>
+</picture>
 
 ### 2. Renseignez ces variables d'environnement dans Codespaces secrets
 
-<img src="images/mlflow-server-inside-codespace-01-codespaces-secrets.png" width=980>
+<picture>
+  <img src="images/mlflow-server-inside-codespace-01-codespaces-secrets.png" width=980>
+</picture>
 
 ### 3. Ouvrir le port 5011
 
 Dans le Terminal, onglet "Ports", définir l'URL du **port 5001** comme **public**.
 
-<img src="images/mlflow-server-inside-codespace-03-set-port-5001-public.png" width=980>
+<picture>
+  <img src="images/mlflow-server-inside-codespace-03-set-port-5001-public.png" width=980>
+</picture>
 
 ### 4. Accéder à l'UI MLflow
 
 Accéder à l'UI MLflow en accédant à l'**URL public exposée par codespace**. Utiliser cette URL pour le tracking de vos travaux de machine learning, ou que vous soyez (Colab, Notebook, VM, un autre codespapce, etc...).
 
-<img src="images/mlflow-server-inside-codespace-09-mlflow-ui.png" width=980>
+<picture>
+  <img src="images/mlflow-server-inside-codespace-09-mlflow-ui.png" width=980>
+</picture>
 
 ### 5. Utilisation dans un Notebook Colab
 
@@ -55,7 +63,9 @@ Démonstration et exemples de code dans ce notebook : [![Open In Colab](https://
   - `AWS_ACCESS_KEY_ID`
   - `AWS_SECRET_ACCESS_KEY`
 
-<img src="images/mlflow-server-inside-codespace-04-colab-secrets.png" width=980>
+<picture>
+  <img src="images/mlflow-server-inside-codespace-04-colab-secrets.png" width=980>
+</picture>
 
 ## 🪐 Alternative : Lancer un serveur MLflow local
 
