@@ -50,7 +50,7 @@ def print_logged_info(r):
     print(f"⚡ artifacts: {artifacts}")
     print(f"⚙️ params: {r.data.params}")
     print(f"📝 metrics: {r.data.metrics}")
-    print(f"🏷️tags: {tags}")
+    print(f"🏷️ tags: {tags}")
     print()
 
 # Set our tracking server uri for logging
