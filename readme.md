@@ -9,7 +9,6 @@ Vous trouverez dans ce dépôt, tous les éléments nécessaires pour démarrer 
 ## 🧾 TODO
 
 - Améliorer le "Port Forwarding" : 5001 (rendre ce port "public" et ouvrir le navigateur automatiquement)
-- refaire tutorial.ipynb
 - Variables d'environnement dans Dev Container local
 
 ## 🔮 A propos de MLflow
