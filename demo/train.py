@@ -43,10 +43,10 @@ accuracy = accuracy_score(y_test, y_pred)
 
 def print_logged_info(r):
     print("")
-    print("🏃 MLflow Run Infos :")
+    print("⚗️ MLflow Run Infos :")
     tags = {k: v for k, v in r.data.tags.items() if not k.startswith("mlflow.")}
     artifacts = [f.path for f in MlflowClient().list_artifacts(r.info.run_id, "model")]
-    print(f"⚗️ run_id: {r.info.run_id}")
+    print(f"🏃 run_id: {r.info.run_id}")
     print(f"⚡ artifacts: {artifacts}")
     print(f"⚙️ params: {r.data.params}")
     print(f"📝 metrics: {r.data.metrics}")
@@ -57,7 +57,7 @@ def print_logged_info(r):
 mlflow.set_tracking_uri(uri="http://localhost:5001")
 
 # Create a new MLflow Experiment
-mlflow.set_experiment("MLflow Server Demo Codespace")
+mlflow.set_experiment("Demo Codespace")
 
 # Start an MLflow run
 with mlflow.start_run() as run:
