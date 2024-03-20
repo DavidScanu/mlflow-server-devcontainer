@@ -6,11 +6,6 @@
 
 Vous trouverez dans ce dépôt, tous les éléments nécessaires pour démarrer un [serveur MLflow](https://mlflow.org/docs/latest/tracking/tutorials/remote-server.html) dans un [codespace](https://docs.github.com/fr/codespaces/overview) ([Dev Container](https://containers.dev/)). 
 
-## 🧾 TODO
-
-- Améliorer le "Port Forwarding" : 5001 (rendre ce port "public" et ouvrir le navigateur automatiquement)
-- Variables d'environnement dans Dev Container local
-
 ## 🔮 A propos de MLflow
 
 [MLflow](https://mlflow.org/docs/latest/introduction/index.html) fournit une suite d'outils visant à simplifier le flux de travail ML. Il est conçu pour aider les développeurs tout au long des différentes étapes de développement et de déploiement du ML. Les fonctionnalités principales de MLflow  sont :
@@ -86,6 +81,11 @@ Pour vérifier que le serveur MLflow est bien lancé et fonctionnel, exécuter l
 1. **Entrainer un modèle** : `python3 demo/train.py`. Vous devez voir apparaître un nouveau run dans l'UI MLflow et dans le Terminal.
 2. **Copier le numéro de Run** (Run ID).
 3. **Utiliser un modèle** : `python3 demo/try-model.py`. Entrez le numero de Run (Run ID) dans le Terminal. Cette commande retourne un modèle dans le Terminal.
+
+## 🧾 TODO
+
+- Améliorer le "Port Forwarding" : 5001 (rendre ce port "public" et ouvrir le navigateur automatiquement)
+- Variables d'environnement dans Dev Container local
 
 ## 👾 A Propos
 
