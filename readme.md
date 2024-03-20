@@ -39,7 +39,7 @@ Il est possible de sauvegarder des variables d'environnement pour vos codesapce.
   <img src="images/mlflow-server-inside-codespace-02-create-codespace-on-master.png" width=980>
 </picture>
 
-### 3. Ouvrir le port 5011
+### 3. Ouvrir le port 5001
 
 Dans le Terminal, onglet "Ports", définir l'URL du **port 5001** comme **public**.
 
