@@ -22,8 +22,7 @@ Allez à la page de configuration des **variables d'environnement pour Codespace
 
 - `ARTIFACT_STORE_URI` : L'URI de stockage des artéfacts (Amazon S3).
 - `AWS_ACCESS_KEY_ID` et `AWS_SECRET_ACCESS_KEY` : Les identifiants de connexion à l'espace de stockage Amazon S3. 
-- `BACKEND_STORE_URI` : L'URI de votre base de donnée. Pour une base de donnée PostgreSQL, l'URI se présente au format : `postgresql://[username]:[password]@[host]:[port]/[database]`
-
+- `BACKEND_STORE_URI` : L'URI de votre base de donnée. Pour une base de donnée PostgreSQL, l'URI se présente au format : `postgresql://[username]:[password]@[host]:[port]/[database]
 Plus de renseignements sur la configuration d'un serveur de tracking MLflow : [Set up the MLflow Tracking Environment](https://mlflow.org/docs/latest/tracking.html#set-up-the-mlflow-tracking-environment).
 
 <picture>
