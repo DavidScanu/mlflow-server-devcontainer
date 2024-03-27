@@ -2,7 +2,7 @@
   <img src="images/bandeau-mlflow-codespaces.png" alt="Mlflow inside a codespace header" width="980px">
 </picture>
 
-# Lancer un serveur MLflow dans un codespace (Dev Container)
+# Lancer un serveur MLflow dans un codespace
 
 Vous trouverez dans ce dépôt, tous les éléments nécessaires pour démarrer un [serveur MLflow](https://mlflow.org/docs/latest/tracking/tutorials/remote-server.html) dans un [codespace](https://docs.github.com/fr/codespaces/overview) ([Dev Container](https://containers.dev/)). 
 
