@@ -6,7 +6,9 @@ services:
       - "5001:5001"
     environment:
       - PORT=5001
-    env_file: .devcontainer/devcontainer.env
+    env_file:
+      - path: .devcontainer/devcontainer.env
+        required: false
     volumes:
       - .:/mlflow
     restart: always
