@@ -6,10 +6,7 @@ services:
       - "5001:5001"
     environment:
       - PORT=5001
-      - BACKEND_STORE_URI=$BACKEND_STORE_URI
-      - ARTIFACT_STORE_URI=$ARTIFACT_STORE_URI
-      - AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID
-      - AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY
+    env_file: .devcontainer/devcontainer.env
     volumes:
       - .:/mlflow
     restart: always
