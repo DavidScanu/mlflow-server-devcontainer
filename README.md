@@ -80,6 +80,14 @@ Démonstration de l'utilisation du serveur de tracking depuis ce notebook : [![O
 
 Votre serveur MLflow fonctionne maintenant depuis votre codespace et vous pouvez trackez vos expériences de machine learning. **N'oubliez pas de lancer et d'éteindre votre codespace à chaque utilisation**. Sans quoi, du temps d'utilisation vous sera décompté.
 
+## TODO
+
+- Réparer 'bind mount' dans le conteneur
+
+## Ressources 
+
+- https://code.visualstudio.com/remote/advancedcontainers/change-default-source-mount
+
 ## 👾 A Propos
 
 **David Scanu**, étudiant en Intelligence artificielle à l'école **Microsoft IA par Simplon et ISEN**.
