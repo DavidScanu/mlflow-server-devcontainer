@@ -10,6 +10,8 @@ docker-run.sh
 
 # Environnements
 .env
+*.env
+**.env
 **/.env
 **/.venv
 .DS_Store
