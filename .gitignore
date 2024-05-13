@@ -8,6 +8,7 @@ test-local-server.ipynb
 test-ngrock.ipynb
 docker-run.sh
 
+# Environnements
 .env
 **/.env
 **/.venv
