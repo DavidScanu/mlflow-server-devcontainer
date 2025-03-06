@@ -90,6 +90,6 @@ Votre serveur MLflow fonctionne maintenant depuis votre codespace et vous pouvez
 
 ## 👾 A Propos
 
-**David Scanu**, développeur en Intelligence artificielle, diplômé de l'école **Microsoft IA par Simplon et ISEN**.
+**David Scanu**, étudiant en Intelligence artificielle à l'école **Microsoft IA par Simplon et ISEN**.
 
 <a href="https://www.linkedin.com/in/davidscanu14/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" ></a>
