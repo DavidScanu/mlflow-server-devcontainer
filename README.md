@@ -80,6 +80,29 @@ Démonstration de l'utilisation du serveur de tracking depuis ce notebook : [![O
 
 Votre serveur MLflow fonctionne maintenant depuis votre codespace et vous pouvez trackez vos expériences de machine learning. **N'oubliez pas de lancer et d'éteindre votre codespace à chaque utilisation**. Sans quoi, du temps d'utilisation vous sera décompté.
 
+
+## Script Keep-Alive pour GitHub Codespaces
+
+GitHub Codespaces est configuré pour s'arrêter automatiquement après une période d'inactivité (généralement 30 minutes). Ce comportement, bien qu'utile pour économiser des ressources, peut être gênant lorsque vous travaillez sur des projets nécessitant un environnement de développement constamment disponible.
+
+Ce dépôt contient un script `keep_alive.sh` qui simule une activité utilisateur en créant périodiquement de petites modifications dans un fichier journal. GitHub Codespaces détecte ces modifications comme une activité utilisateur et maintient ainsi l'environnement actif.
+
+Pour rendre le script exécutable, executez la commande suivante :
+
+```bash
+chmod +x keep_alive.sh
+```
+
+Pour lancer le script, exécutez simplement :
+
+```bash
+./keep_alive.sh
+```
+
+Vous pouvez laisser ce script s'exécuter dans un terminal pendant que vous travaillez dans d'autres onglets. Le script affichera périodiquement un message indiquant qu'il est toujours actif.
+
+Pour arrêter le script, appuyez sur `Ctrl+C`.
+
 ## TODO
 
 - Réparer 'bind mount' dans le conteneur
